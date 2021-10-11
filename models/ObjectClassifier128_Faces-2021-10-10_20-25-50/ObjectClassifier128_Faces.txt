@@ -1,0 +1,58 @@
+============================ Raw Args ============================
+Namespace(batch_size=64, classification='y', dropout='n', dropout_prob=0.0, gpu_i=-1, imbalanced_sampler='y', k_folds='5', l2_reg='n', load_trained='n', log_dest='../models/ObjectClassifier128_Faces-2021-10-10_20-25-50', loss_freq=100, lr=0.005, model_name='ObjectClassifier128', normalize='y', num_classes=2, num_epochs=1, optim='SGD', regression='n', root_dir='none', session_name='ObjectClassifier128_Faces', test_data_dir='none', test_labels_csv='none', train_data_dir='none', train_labels_csv='none', trained_path='../models/PMR_detection_0-3_two_to_one-2021-09-01_12-09-14/BEST_model.pth', val_freq=0, weight_decay_amnt=0.0, weighted_loss='n')
+
+
+
+================================ Start Training ================================
+
+Session Name: ObjectClassifier128_Faces
+
+Model Name: ObjectClassifier128
+Device: cpu
+
+Hyperparameters:
+Batch Size: 64
+Learning Rate: 0.005
+Number of Epochs: 1
+Normalization:y
+
+
+FOLD 0
+=================================================================
+Train Epoch: 0 Iteration: 100 [6400/101632 (6%)]	 Batch 100 Loss: 0.693583
+Train Epoch: 0 Iteration: 200 [12800/101632 (13%)]	 Batch 200 Loss: 0.693307
+Train Epoch: 0 Iteration: 300 [19200/101632 (19%)]	 Batch 300 Loss: 0.696405
+Train Epoch: 0 Iteration: 400 [25600/101632 (25%)]	 Batch 400 Loss: 0.690775
+Train Epoch: 0 Iteration: 500 [32000/101632 (31%)]	 Batch 500 Loss: 0.683434
+Train Epoch: 0 Iteration: 600 [38400/101632 (38%)]	 Batch 600 Loss: 0.689110
+Train Epoch: 0 Iteration: 700 [44800/101632 (44%)]	 Batch 700 Loss: 0.666508
+Train Epoch: 0 Iteration: 800 [51200/101632 (50%)]	 Batch 800 Loss: 0.658610
+Train Epoch: 0 Iteration: 900 [57600/101632 (57%)]	 Batch 900 Loss: 0.680493
+Train Epoch: 0 Iteration: 1000 [64000/101632 (63%)]	 Batch 1000 Loss: 0.656956
+Train Epoch: 0 Iteration: 1100 [70400/101632 (69%)]	 Batch 1100 Loss: 0.647544
+Train Epoch: 0 Iteration: 1200 [76800/101632 (76%)]	 Batch 1200 Loss: 0.613931
+Train Epoch: 0 Iteration: 1300 [83200/101632 (82%)]	 Batch 1300 Loss: 0.574276
+Train Epoch: 0 Iteration: 1400 [89600/101632 (88%)]	 Batch 1400 Loss: 0.646622
+Train Epoch: 0 Iteration: 1500 [96000/101632 (94%)]	 Batch 1500 Loss: 0.614723
+
+
+----------------- Epoch 0 -----------------
+
+validation computation time: 3.0  minutes
+Confusion Matrix
+tensor([[12544, 11989],
+        [   56,   807]])
+class 0 accuracy: 99.5556%
+class 1 accuracy: 6.3067%
+
+Validation Loss: 0.7509, Accuracy: 13351/25408 (53%)
+Training Loss:0.6617
+Best Accuracy: 52.546442%
+Time Elapsed: 0h 26m 20s
+
+--------------------------------------------------------
+
+
+================================ Finished Training ================================
+================================ QUIT ================================
+ Saving Model ...

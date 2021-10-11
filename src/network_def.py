@@ -7,12 +7,45 @@ This file defines multiple CNN models for object classification/detection
 import torch
 #from torch.cuda import set_device
 import torch.nn as nn
-import torch.nn.Functional as F
+import torch.nn.functional as F
 #import torch.nn.utils.rnn as rnn_utils
 #import copy 
+torch.manual_seed(42)
 
-# This is the base CNN used to train an object classifier (images 128x128)
-# The convolution layers are taken from this model for object detection
+# ===================================================================================================== #
+# ============================================= MODELS ================================================ #
+# ===================================================================================================== #
+'''
+MNIST CNN used to make sure training is working correctly
+Parameters:
+    None
+'''
+class MNISTClassifier(nn.Module):
+    def __init__(self):
+        super(MNISTClassifier, self).__init__()
+        self.conv1 = nn.Conv2d(1, 10, kernel_size=5)
+        self.conv2 = nn.Conv2d(10, 20, kernel_size=5)
+        self.conv2_drop = nn.Dropout2d()
+        self.fc1 = nn.Linear(320, 50)
+        self.fc2 = nn.Linear(50, 10)
+
+    def forward(self, x):
+        x = F.relu(F.max_pool2d(self.conv1(x), 2))
+        x = F.relu(F.max_pool2d(self.conv2_drop(self.conv2(x)), 2))
+        x = x.view(-1, 320)
+        x = F.relu(self.fc1(x))
+        x = F.dropout(x, training=self.training)
+        x = self.fc2(x)
+        return x
+
+# --------------------------------------------------------------------------------- #
+
+'''
+Base CNN used for object classification (images 128x128)
+Parameters:
+    args - these are the args specified in the config file and are passed
+           in by the training function in network_train.py
+'''
 class ObjectClassifier128(torch.nn.Module):
     def __init__(self,args):
         super(ObjectClassifier128,self).__init__()
@@ -87,19 +120,12 @@ class ObjectClassifier128(torch.nn.Module):
         x = self.pool(x)
         x = F.relu(self.conv10(x))
         
+        # flatten the batch_size x 64x4x4 tensor to be batch_size x (64*4*4)
         x = x.view(x.size(0), -1)
         x = F.relu(self.fc1(x))
         x = self.fc2(x)
         
         return x
-
-    # initialize the hidden state at the start of each forward pass
-    def init_hidden(self,batch_size):
-        if self.init == True:
-            self.h0 = torch.randn(self.num_layers,batch_size,self.hidden_size)
-        else:
-            self.h0 = torch.zeros(self.num_layers,batch_size,self.hidden_size)
-        self.h0 = self.h0.to(self.device)
 
 
 

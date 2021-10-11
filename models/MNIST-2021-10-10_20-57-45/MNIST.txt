@@ -1,0 +1,34 @@
+============================ Raw Args ============================
+Namespace(batch_size=64, classification='y', dropout='n', dropout_prob=0.0, gpu_i=-1, imbalanced_sampler='n', k_folds='5', l2_reg='n', load_trained='n', log_dest='../models/MNIST-2021-10-10_20-57-45', loss_freq=100, lr=0.005, model_name='MNISTClassifier', normalize='y', num_classes=2, num_epochs=1, optim='SGD', regression='n', root_dir='none', session_name='MNIST', test_data_dir='none', test_labels_csv='none', train_data_dir='none', train_labels_csv='none', trained_path='n', val_freq=0, weight_decay_amnt=0.0, weighted_loss='n')
+
+
+
+================================ Start Training ================================
+
+Session Name: MNIST
+
+Model Name: MNISTClassifier
+Device: cpu
+
+Hyperparameters:
+Batch Size: 64
+Learning Rate: 0.005
+Number of Epochs: 1
+Normalization:y
+
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz to /home/geffen/Desktop/MNIST/MNIST/raw/train-images-idx3-ubyte.gz
+Extracting /home/geffen/Desktop/MNIST/MNIST/raw/train-images-idx3-ubyte.gz to /home/geffen/Desktop/MNIST/MNIST/raw
+
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz to /home/geffen/Desktop/MNIST/MNIST/raw/train-labels-idx1-ubyte.gz
+Extracting /home/geffen/Desktop/MNIST/MNIST/raw/train-labels-idx1-ubyte.gz to /home/geffen/Desktop/MNIST/MNIST/raw
+
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz to /home/geffen/Desktop/MNIST/MNIST/raw/t10k-images-idx3-ubyte.gz
+Extracting /home/geffen/Desktop/MNIST/MNIST/raw/t10k-images-idx3-ubyte.gz to /home/geffen/Desktop/MNIST/MNIST/raw
+
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz to /home/geffen/Desktop/MNIST/MNIST/raw/t10k-labels-idx1-ubyte.gz
+Extracting /home/geffen/Desktop/MNIST/MNIST/raw/t10k-labels-idx1-ubyte.gz to /home/geffen/Desktop/MNIST/MNIST/raw
+

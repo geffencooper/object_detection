@@ -1,0 +1,288 @@
+============================ Raw Args ============================
+Namespace(batch_size=64, classification='y', dropout='n', dropout_prob=0.0, gpu_i=-1, imbalanced_sampler='y', k_folds='5', l2_reg='n', load_trained='n', log_dest='../models/ObjectClassifier128_Faces-2021-10-10_21-34-29', loss_freq=100, lr=0.005, model_name='ObjectClassifier128', normalize='y', num_classes=2, num_epochs=1, optim='SGD', regression='n', root_dir='none', session_name='ObjectClassifier128_Faces', test_data_dir='none', test_labels_csv='none', train_data_dir='none', train_labels_csv='none', trained_path='../models/PMR_detection_0-3_two_to_one-2021-09-01_12-09-14/BEST_model.pth', val_freq=0, weight_decay_amnt=0.0, weighted_loss='n')
+
+
+
+================================ Start Training ================================
+
+Session Name: ObjectClassifier128_Faces
+
+Model Name: ObjectClassifier128
+Device: cpu
+
+Hyperparameters:
+Batch Size: 64
+Learning Rate: 0.005
+Number of Epochs: 1
+Normalization:y
+
+
+FOLD 0
+=================================================================
+Train Epoch: 0 Iteration: 100 [6400/101632 (6%)]	 Batch 100 Loss: 0.635112
+Train Epoch: 0 Iteration: 200 [12800/101632 (13%)]	 Batch 200 Loss: 0.530604
+Train Epoch: 0 Iteration: 300 [19200/101632 (19%)]	 Batch 300 Loss: 0.229828
+Train Epoch: 0 Iteration: 400 [25600/101632 (25%)]	 Batch 400 Loss: 0.357733
+Train Epoch: 0 Iteration: 500 [32000/101632 (31%)]	 Batch 500 Loss: 0.133208
+Train Epoch: 0 Iteration: 600 [38400/101632 (38%)]	 Batch 600 Loss: 0.148338
+Train Epoch: 0 Iteration: 700 [44800/101632 (44%)]	 Batch 700 Loss: 0.106531
+Train Epoch: 0 Iteration: 800 [51200/101632 (50%)]	 Batch 800 Loss: 0.133961
+Train Epoch: 0 Iteration: 900 [57600/101632 (57%)]	 Batch 900 Loss: 0.043799
+Train Epoch: 0 Iteration: 1000 [64000/101632 (63%)]	 Batch 1000 Loss: 0.077649
+Train Epoch: 0 Iteration: 1100 [70400/101632 (69%)]	 Batch 1100 Loss: 0.057541
+Train Epoch: 0 Iteration: 1200 [76800/101632 (76%)]	 Batch 1200 Loss: 0.064365
+Train Epoch: 0 Iteration: 1300 [83200/101632 (82%)]	 Batch 1300 Loss: 0.101004
+Train Epoch: 0 Iteration: 1400 [89600/101632 (88%)]	 Batch 1400 Loss: 0.044378
+Train Epoch: 0 Iteration: 1500 [96000/101632 (94%)]	 Batch 1500 Loss: 0.052909
+
+
+----------------- Epoch 0 -----------------
+
+validation computation time: 2.0  minutes
+Confusion Matrix
+tensor([[11966,    88],
+        [  611, 12731]])
+class 0 accuracy: 95.1419%
+class 1 accuracy: 99.3135%
+
+Validation Loss: 0.0752, Accuracy: 24697/25408 (97%)
+Training Loss:0.1958
+Best Accuracy: 97.201669%
+Time Elapsed: 0h 20m 35s
+
+--------------------------------------------------------
+
+
+================================ Finished Training ================================
+validation computation time: 2.0  minutes
+Confusion Matrix
+tensor([[11989,    90],
+        [  588, 12729]])
+class 0 accuracy: 95.3248%
+class 1 accuracy: 99.2979%
+
+Validation Loss: 0.0738, Accuracy: 24718/25408 (97%)
+Best Accuracy: 97.284320%
+Time Elapsed: 0h 23m 28s
+Epochs: [0]
+Val_Accuracies: [97.20166876574308]
+Val_Losses: [0.07519947972631913]
+Train_Losses: [0.1957686293860827]
+
+FOLD 1
+=================================================================
+Train Epoch: 0 Iteration: 100 [6400/101632 (6%)]	 Batch 100 Loss: 0.372345
+Train Epoch: 0 Iteration: 200 [12800/101632 (13%)]	 Batch 200 Loss: 0.193088
+Train Epoch: 0 Iteration: 300 [19200/101632 (19%)]	 Batch 300 Loss: 0.183442
+Train Epoch: 0 Iteration: 400 [25600/101632 (25%)]	 Batch 400 Loss: 0.177078
+Train Epoch: 0 Iteration: 500 [32000/101632 (31%)]	 Batch 500 Loss: 0.076070
+Train Epoch: 0 Iteration: 600 [38400/101632 (38%)]	 Batch 600 Loss: 0.017842
+Train Epoch: 0 Iteration: 700 [44800/101632 (44%)]	 Batch 700 Loss: 0.097905
+Train Epoch: 0 Iteration: 800 [51200/101632 (50%)]	 Batch 800 Loss: 0.230269
+Train Epoch: 0 Iteration: 900 [57600/101632 (57%)]	 Batch 900 Loss: 0.092057
+Train Epoch: 0 Iteration: 1000 [64000/101632 (63%)]	 Batch 1000 Loss: 0.082197
+Train Epoch: 0 Iteration: 1100 [70400/101632 (69%)]	 Batch 1100 Loss: 0.123642
+Train Epoch: 0 Iteration: 1200 [76800/101632 (76%)]	 Batch 1200 Loss: 0.067056
+Train Epoch: 0 Iteration: 1300 [83200/101632 (82%)]	 Batch 1300 Loss: 0.125278
+Train Epoch: 0 Iteration: 1400 [89600/101632 (88%)]	 Batch 1400 Loss: 0.035077
+Train Epoch: 0 Iteration: 1500 [96000/101632 (94%)]	 Batch 1500 Loss: 0.013619
+
+
+----------------- Epoch 0 -----------------
+
+validation computation time: 2.0  minutes
+Confusion Matrix
+tensor([[12538,   357],
+        [   98, 12403]])
+class 0 accuracy: 99.2244%
+class 1 accuracy: 97.2022%
+
+Validation Loss: 0.0562, Accuracy: 24941/25408 (98%)
+Training Loss:0.1405
+Best Accuracy: 98.161996%
+Time Elapsed: 0h 20m 26s
+
+--------------------------------------------------------
+
+
+================================ Finished Training ================================
+validation computation time: 2.0  minutes
+Confusion Matrix
+tensor([[12545,   346],
+        [   91, 12414]])
+class 0 accuracy: 99.2798%
+class 1 accuracy: 97.2884%
+
+Validation Loss: 0.0556, Accuracy: 24959/25408 (98%)
+Best Accuracy: 98.232840%
+Time Elapsed: 0h 22m 53s
+Epochs: [0, 0]
+Val_Accuracies: [97.20166876574308, 98.16199622166246]
+Val_Losses: [0.07519947972631913, 0.05619425422884993]
+Train_Losses: [0.1957686293860827, 0.14046462866628978]
+
+FOLD 2
+=================================================================
+Train Epoch: 0 Iteration: 100 [6400/101632 (6%)]	 Batch 100 Loss: 0.605578
+Train Epoch: 0 Iteration: 200 [12800/101632 (13%)]	 Batch 200 Loss: 0.376151
+Train Epoch: 0 Iteration: 300 [19200/101632 (19%)]	 Batch 300 Loss: 0.239514
+Train Epoch: 0 Iteration: 400 [25600/101632 (25%)]	 Batch 400 Loss: 0.141788
+Train Epoch: 0 Iteration: 500 [32000/101632 (31%)]	 Batch 500 Loss: 0.091403
+Train Epoch: 0 Iteration: 600 [38400/101632 (38%)]	 Batch 600 Loss: 0.112777
+Train Epoch: 0 Iteration: 700 [44800/101632 (44%)]	 Batch 700 Loss: 0.105581
+Train Epoch: 0 Iteration: 800 [51200/101632 (50%)]	 Batch 800 Loss: 0.065854
+Train Epoch: 0 Iteration: 900 [57600/101632 (57%)]	 Batch 900 Loss: 0.129188
+Train Epoch: 0 Iteration: 1000 [64000/101632 (63%)]	 Batch 1000 Loss: 0.140201
+Train Epoch: 0 Iteration: 1100 [70400/101632 (69%)]	 Batch 1100 Loss: 0.074320
+Train Epoch: 0 Iteration: 1200 [76800/101632 (76%)]	 Batch 1200 Loss: 0.062123
+Train Epoch: 0 Iteration: 1300 [83200/101632 (82%)]	 Batch 1300 Loss: 0.036688
+Train Epoch: 0 Iteration: 1400 [89600/101632 (88%)]	 Batch 1400 Loss: 0.125559
+Train Epoch: 0 Iteration: 1500 [96000/101632 (94%)]	 Batch 1500 Loss: 0.018422
+
+
+----------------- Epoch 0 -----------------
+
+validation computation time: 2.0  minutes
+Confusion Matrix
+tensor([[12545,   494],
+        [   89, 12268]])
+class 0 accuracy: 99.2956%
+class 1 accuracy: 96.1291%
+
+Validation Loss: 0.0607, Accuracy: 24813/25408 (98%)
+Training Loss:0.1746
+Best Accuracy: 98.232840%
+Time Elapsed: 0h 19m 44s
+
+--------------------------------------------------------
+
+
+================================ Finished Training ================================
+validation computation time: 2.0  minutes
+Confusion Matrix
+tensor([[12539,   502],
+        [   95, 12260]])
+class 0 accuracy: 99.2481%
+class 1 accuracy: 96.0664%
+
+Validation Loss: 0.0622, Accuracy: 24799/25408 (98%)
+Best Accuracy: 98.232840%
+Time Elapsed: 0h 22m 11s
+Epochs: [0, 0, 0]
+Val_Accuracies: [97.20166876574308, 98.16199622166246, 97.65821788413098]
+Val_Losses: [0.07519947972631913, 0.05619425422884993, 0.06070573288379636]
+Train_Losses: [0.1957686293860827, 0.14046462866628978, 0.17456392939196622]
+
+FOLD 3
+=================================================================
+Train Epoch: 0 Iteration: 100 [6400/101632 (6%)]	 Batch 100 Loss: 0.409643
+Train Epoch: 0 Iteration: 200 [12800/101632 (13%)]	 Batch 200 Loss: 0.382246
+Train Epoch: 0 Iteration: 300 [19200/101632 (19%)]	 Batch 300 Loss: 0.178259
+Train Epoch: 0 Iteration: 400 [25600/101632 (25%)]	 Batch 400 Loss: 0.287427
+Train Epoch: 0 Iteration: 500 [32000/101632 (31%)]	 Batch 500 Loss: 0.067681
+Train Epoch: 0 Iteration: 600 [38400/101632 (38%)]	 Batch 600 Loss: 0.115267
+Train Epoch: 0 Iteration: 700 [44800/101632 (44%)]	 Batch 700 Loss: 0.035551
+Train Epoch: 0 Iteration: 800 [51200/101632 (50%)]	 Batch 800 Loss: 0.046541
+Train Epoch: 0 Iteration: 900 [57600/101632 (57%)]	 Batch 900 Loss: 0.077150
+Train Epoch: 0 Iteration: 1000 [64000/101632 (63%)]	 Batch 1000 Loss: 0.166722
+Train Epoch: 0 Iteration: 1100 [70400/101632 (69%)]	 Batch 1100 Loss: 0.070626
+Train Epoch: 0 Iteration: 1200 [76800/101632 (76%)]	 Batch 1200 Loss: 0.050583
+Train Epoch: 0 Iteration: 1300 [83200/101632 (82%)]	 Batch 1300 Loss: 0.199176
+Train Epoch: 0 Iteration: 1400 [89600/101632 (88%)]	 Batch 1400 Loss: 0.043383
+Train Epoch: 0 Iteration: 1500 [96000/101632 (94%)]	 Batch 1500 Loss: 0.060406
+
+
+----------------- Epoch 0 -----------------
+
+validation computation time: 3.0  minutes
+Confusion Matrix
+tensor([[12444,   199],
+        [  175, 12578]])
+class 0 accuracy: 98.6132%
+class 1 accuracy: 98.4425%
+
+Validation Loss: 0.0445, Accuracy: 25022/25408 (98%)
+Training Loss:0.1472
+Best Accuracy: 98.480793%
+Time Elapsed: 0h 20m 10s
+
+--------------------------------------------------------
+
+
+================================ Finished Training ================================
+validation computation time: 2.0  minutes
+Confusion Matrix
+tensor([[12454,   189],
+        [  165, 12588]])
+class 0 accuracy: 98.6925%
+class 1 accuracy: 98.5208%
+
+Validation Loss: 0.0441, Accuracy: 25042/25408 (99%)
+Best Accuracy: 98.559509%
+Time Elapsed: 0h 22m 38s
+Epochs: [0, 0, 0, 0]
+Val_Accuracies: [97.20166876574308, 98.16199622166246, 97.65821788413098, 98.4807934508816]
+Val_Losses: [0.07519947972631913, 0.05619425422884993, 0.06070573288379636, 0.04450169517611733]
+Train_Losses: [0.1957686293860827, 0.14046462866628978, 0.17456392939196622, 0.14716174861932904]
+
+FOLD 4
+=================================================================
+Train Epoch: 0 Iteration: 100 [6400/101632 (6%)]	 Batch 100 Loss: 0.614558
+Train Epoch: 0 Iteration: 200 [12800/101632 (13%)]	 Batch 200 Loss: 0.376044
+Train Epoch: 0 Iteration: 300 [19200/101632 (19%)]	 Batch 300 Loss: 0.716502
+Train Epoch: 0 Iteration: 400 [25600/101632 (25%)]	 Batch 400 Loss: 0.290826
+Train Epoch: 0 Iteration: 500 [32000/101632 (31%)]	 Batch 500 Loss: 0.186085
+Train Epoch: 0 Iteration: 600 [38400/101632 (38%)]	 Batch 600 Loss: 0.189593
+Train Epoch: 0 Iteration: 700 [44800/101632 (44%)]	 Batch 700 Loss: 0.157616
+Train Epoch: 0 Iteration: 800 [51200/101632 (50%)]	 Batch 800 Loss: 0.065885
+Train Epoch: 0 Iteration: 900 [57600/101632 (57%)]	 Batch 900 Loss: 0.087984
+Train Epoch: 0 Iteration: 1000 [64000/101632 (63%)]	 Batch 1000 Loss: 0.122270
+Train Epoch: 0 Iteration: 1100 [70400/101632 (69%)]	 Batch 1100 Loss: 0.095373
+Train Epoch: 0 Iteration: 1200 [76800/101632 (76%)]	 Batch 1200 Loss: 0.127601
+Train Epoch: 0 Iteration: 1300 [83200/101632 (82%)]	 Batch 1300 Loss: 0.124477
+Train Epoch: 0 Iteration: 1400 [89600/101632 (88%)]	 Batch 1400 Loss: 0.067302
+Train Epoch: 0 Iteration: 1500 [96000/101632 (94%)]	 Batch 1500 Loss: 0.136680
+
+
+----------------- Epoch 0 -----------------
+
+validation computation time: 2.0  minutes
+Confusion Matrix
+tensor([[12139,   299],
+        [  395, 12563]])
+class 0 accuracy: 96.8486%
+class 1 accuracy: 97.6753%
+
+Validation Loss: 0.0786, Accuracy: 24702/25408 (97%)
+Training Loss:0.2167
+Best Accuracy: 98.559509%
+Time Elapsed: 0h 21m 38s
+
+--------------------------------------------------------
+
+
+================================ Finished Training ================================
+validation computation time: 2.0  minutes
+Confusion Matrix
+tensor([[12129,   284],
+        [  405, 12578]])
+class 0 accuracy: 96.7688%
+class 1 accuracy: 97.7919%
+
+Validation Loss: 0.0780, Accuracy: 24707/25408 (97%)
+Best Accuracy: 98.559509%
+Time Elapsed: 0h 24m 24s
+Epochs: [0, 0, 0, 0, 0]
+Val_Accuracies: [97.20166876574308, 98.16199622166246, 97.65821788413098, 98.4807934508816, 97.22134760705289]
+Val_Losses: [0.07519947972631913, 0.05619425422884993, 0.06070573288379636, 0.04450169517611733, 0.07855221144948858]
+Train_Losses: [0.1957686293860827, 0.14046462866628978, 0.17456392939196622, 0.14716174861932904, 0.2167003262982767]
+
+
+K-FOLD CROSS VALIDATION RESULTS FOR 5 FOLDS
+-----------------------------------------------------
+Fold 0: 97.28431989924434 %
+Fold 1: 98.23284005037783 %
+Fold 2: 98.23284005037783 %
+Fold 3: 98.55950881612091 %
+Fold 4: 98.55950881612091 %
+Average: 98.17380352644837 %
