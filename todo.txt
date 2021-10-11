@@ -1,0 +1,8 @@
+-need to fix the way validation and training loss is collected (should be over a training session not all the folds)
+-keep track of total training time accross all folds
+-output less text to make logs easier to read
+-fix the way normalization is passed in
+-fix the ways idxs are collected for viewing misclassified samples (need to ave fixed seed) so can use index after training
+-all datasets should have a labels member which is used by the stratified k-fold
+-need to add the predict script for test data
+-need to integrate live camera data
