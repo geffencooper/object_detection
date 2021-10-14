@@ -1,0 +1,1878 @@
+============================ Raw Args ============================
+Namespace(batch_size=32, classification='y', dropout='n', dropout_prob=0.0, gpu_i=-1, imbalanced_sampler='y', k_folds='5', l2_reg='n', load_trained='n', log_dest='../models/ObjectClassifier128_Trash-2021-10-13_22-01-17', loss_freq=2, lr=0.005, model_name='ObjectClassifier128', normalize='y', num_classes=2, num_epochs=20, optim='RMS', regression='n', root_dir='none', session_name='ObjectClassifier128_Trash', test_data_dir='none', test_labels_csv='none', train_data_dir='none', train_labels_csv='none', trained_path='../models/PMR_detection_0-3_two_to_one-2021-09-01_12-09-14/BEST_model.pth', val_freq=0, weight_decay_amnt=0.0, weighted_loss='n')
+
+
+
+================================ Start Training ================================
+
+Session Name: ObjectClassifier128_Trash
+
+Model Name: ObjectClassifier128
+Device: cpu
+
+Hyperparameters:
+Batch Size: 32
+Learning Rate: 0.005
+Number of Epochs: 20
+Normalization:y
+
+normalize
+
+FOLD 0
+=================================================================
+Train Epoch: 0 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.837900
+Train Epoch: 0 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.693147
+Train Epoch: 0 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.693147
+Train Epoch: 0 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.693147
+Train Epoch: 0 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.693147
+Train Epoch: 0 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 18.710983
+Train Epoch: 0 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.694223
+Train Epoch: 0 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.693140
+Train Epoch: 0 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.692791
+
+
+----------------- Epoch 0 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[87, 65],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6915, Accuracy: 87/160 (54%)
+Training Loss:138300.7688
+Best Accuracy: 54.375000%
+Time Elapsed: 0h 0m 7s
+
+--------------------------------------------------------
+
+
+Train Epoch: 1 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.692885
+Train Epoch: 1 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.662486
+Train Epoch: 1 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.689027
+Train Epoch: 1 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.692057
+Train Epoch: 1 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.687423
+Train Epoch: 1 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.690902
+Train Epoch: 1 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.689448
+Train Epoch: 1 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.673037
+Train Epoch: 1 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.661353
+
+
+----------------- Epoch 1 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[87, 65],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6751, Accuracy: 87/160 (54%)
+Training Loss:0.6843
+Best Accuracy: 54.375000%
+Time Elapsed: 0h 0m 15s
+
+--------------------------------------------------------
+
+
+Train Epoch: 2 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 5.941518
+Train Epoch: 2 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.678284
+Train Epoch: 2 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.694649
+Train Epoch: 2 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.679977
+Train Epoch: 2 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.679312
+Train Epoch: 2 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.672997
+Train Epoch: 2 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.754565
+Train Epoch: 2 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.675631
+Train Epoch: 2 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.693556
+
+
+----------------- Epoch 2 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[64, 52],
+        [23, 13]])
+class 0 accuracy: 73.5632%
+class 1 accuracy: 20.0000%
+
+Validation Loss: 0.6533, Accuracy: 77/160 (48%)
+Training Loss:0.9666
+Best Accuracy: 54.375000%
+Time Elapsed: 0h 0m 23s
+
+--------------------------------------------------------
+
+
+Train Epoch: 3 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.624785
+Train Epoch: 3 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.677568
+Train Epoch: 3 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.617009
+Train Epoch: 3 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.607471
+Train Epoch: 3 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.682846
+Train Epoch: 3 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.566495
+Train Epoch: 3 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.619063
+Train Epoch: 3 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.637777
+Train Epoch: 3 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.838091
+
+
+----------------- Epoch 3 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[ 4,  0],
+        [83, 65]])
+class 0 accuracy: 4.5977%
+class 1 accuracy: 100.0000%
+
+Validation Loss: 0.7214, Accuracy: 69/160 (43%)
+Training Loss:0.6527
+Best Accuracy: 54.375000%
+Time Elapsed: 0h 0m 31s
+
+--------------------------------------------------------
+
+
+Train Epoch: 4 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.718842
+Train Epoch: 4 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.639279
+Train Epoch: 4 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.592203
+Train Epoch: 4 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.611616
+Train Epoch: 4 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.623283
+Train Epoch: 4 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.494554
+Train Epoch: 4 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.569992
+Train Epoch: 4 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.595320
+Train Epoch: 4 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.493343
+
+
+----------------- Epoch 4 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[15,  1],
+        [72, 64]])
+class 0 accuracy: 17.2414%
+class 1 accuracy: 98.4615%
+
+Validation Loss: 0.7131, Accuracy: 79/160 (49%)
+Training Loss:0.6063
+Best Accuracy: 54.375000%
+Time Elapsed: 0h 0m 39s
+
+--------------------------------------------------------
+
+
+Train Epoch: 5 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.687580
+Train Epoch: 5 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.582740
+Train Epoch: 5 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.784155
+Train Epoch: 5 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.656364
+Train Epoch: 5 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.631361
+Train Epoch: 5 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.519017
+Train Epoch: 5 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.634299
+Train Epoch: 5 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.718481
+Train Epoch: 5 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.582235
+
+
+----------------- Epoch 5 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[43,  8],
+        [44, 57]])
+class 0 accuracy: 49.4253%
+class 1 accuracy: 87.6923%
+
+Validation Loss: 0.5908, Accuracy: 100/160 (62%)
+Training Loss:0.6148
+Best Accuracy: 62.500000%
+Time Elapsed: 0h 0m 46s
+
+--------------------------------------------------------
+
+
+Train Epoch: 6 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.705204
+Train Epoch: 6 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.569091
+Train Epoch: 6 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.486754
+Train Epoch: 6 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.576448
+Train Epoch: 6 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.637330
+Train Epoch: 6 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.573618
+Train Epoch: 6 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.623840
+Train Epoch: 6 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.693405
+Train Epoch: 6 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.539178
+
+
+----------------- Epoch 6 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[57, 25],
+        [30, 40]])
+class 0 accuracy: 65.5172%
+class 1 accuracy: 61.5385%
+
+Validation Loss: 0.5933, Accuracy: 97/160 (61%)
+Training Loss:0.5912
+Best Accuracy: 62.500000%
+Time Elapsed: 0h 0m 55s
+
+--------------------------------------------------------
+
+
+Train Epoch: 7 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.551947
+Train Epoch: 7 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.873223
+Train Epoch: 7 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.591210
+Train Epoch: 7 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.815029
+Train Epoch: 7 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.580482
+Train Epoch: 7 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.432868
+Train Epoch: 7 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.570894
+Train Epoch: 7 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.608296
+Train Epoch: 7 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.552607
+
+
+----------------- Epoch 7 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[44,  8],
+        [43, 57]])
+class 0 accuracy: 50.5747%
+class 1 accuracy: 87.6923%
+
+Validation Loss: 0.5877, Accuracy: 101/160 (63%)
+Training Loss:0.5838
+Best Accuracy: 63.125000%
+Time Elapsed: 0h 1m 2s
+
+--------------------------------------------------------
+
+
+Train Epoch: 8 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.641913
+Train Epoch: 8 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.610022
+Train Epoch: 8 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.559809
+Train Epoch: 8 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.571005
+Train Epoch: 8 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.542677
+Train Epoch: 8 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.529394
+Train Epoch: 8 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.607184
+Train Epoch: 8 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.573822
+Train Epoch: 8 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.640077
+
+
+----------------- Epoch 8 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[54, 20],
+        [33, 45]])
+class 0 accuracy: 62.0690%
+class 1 accuracy: 69.2308%
+
+Validation Loss: 0.6099, Accuracy: 99/160 (62%)
+Training Loss:0.5520
+Best Accuracy: 63.125000%
+Time Elapsed: 0h 1m 10s
+
+--------------------------------------------------------
+
+
+Train Epoch: 9 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.682385
+Train Epoch: 9 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.615708
+Train Epoch: 9 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.507454
+Train Epoch: 9 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.670838
+Train Epoch: 9 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.699737
+Train Epoch: 9 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.502050
+Train Epoch: 9 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.646488
+Train Epoch: 9 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.422290
+Train Epoch: 9 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.353321
+
+
+----------------- Epoch 9 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[53, 20],
+        [34, 45]])
+class 0 accuracy: 60.9195%
+class 1 accuracy: 69.2308%
+
+Validation Loss: 0.6030, Accuracy: 98/160 (61%)
+Training Loss:0.5761
+Best Accuracy: 63.125000%
+Time Elapsed: 0h 1m 19s
+
+--------------------------------------------------------
+
+
+Train Epoch: 10 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.523511
+Train Epoch: 10 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.459942
+Train Epoch: 10 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.558268
+Train Epoch: 10 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.663497
+Train Epoch: 10 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.480857
+Train Epoch: 10 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.456191
+Train Epoch: 10 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.583112
+Train Epoch: 10 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.607310
+Train Epoch: 10 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.607596
+
+
+----------------- Epoch 10 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[53, 11],
+        [34, 54]])
+class 0 accuracy: 60.9195%
+class 1 accuracy: 83.0769%
+
+Validation Loss: 0.5901, Accuracy: 107/160 (67%)
+Training Loss:0.5410
+Best Accuracy: 66.875000%
+Time Elapsed: 0h 1m 28s
+
+--------------------------------------------------------
+
+
+Train Epoch: 11 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.500309
+Train Epoch: 11 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.475892
+Train Epoch: 11 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.607550
+Train Epoch: 11 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.447147
+Train Epoch: 11 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.517191
+Train Epoch: 11 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.527948
+Train Epoch: 11 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.471621
+Train Epoch: 11 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.637048
+Train Epoch: 11 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.530014
+
+
+----------------- Epoch 11 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[40,  7],
+        [47, 58]])
+class 0 accuracy: 45.9770%
+class 1 accuracy: 89.2308%
+
+Validation Loss: 0.5975, Accuracy: 98/160 (61%)
+Training Loss:0.5471
+Best Accuracy: 66.875000%
+Time Elapsed: 0h 1m 38s
+
+--------------------------------------------------------
+
+
+Train Epoch: 12 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.497245
+Train Epoch: 12 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.591442
+Train Epoch: 12 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.499010
+Train Epoch: 12 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.523722
+Train Epoch: 12 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.519644
+Train Epoch: 12 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.468131
+Train Epoch: 12 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.699318
+Train Epoch: 12 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.556070
+Train Epoch: 12 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.563890
+
+
+----------------- Epoch 12 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[37,  8],
+        [50, 57]])
+class 0 accuracy: 42.5287%
+class 1 accuracy: 87.6923%
+
+Validation Loss: 0.6371, Accuracy: 94/160 (59%)
+Training Loss:0.5284
+Best Accuracy: 66.875000%
+Time Elapsed: 0h 1m 48s
+
+--------------------------------------------------------
+
+
+Train Epoch: 13 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.529706
+Train Epoch: 13 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.436684
+Train Epoch: 13 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.575913
+Train Epoch: 13 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.488051
+Train Epoch: 13 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.426942
+Train Epoch: 13 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.571477
+Train Epoch: 13 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.634618
+Train Epoch: 13 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.543794
+Train Epoch: 13 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.553499
+
+
+----------------- Epoch 13 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[45,  8],
+        [42, 57]])
+class 0 accuracy: 51.7241%
+class 1 accuracy: 87.6923%
+
+Validation Loss: 0.6044, Accuracy: 102/160 (64%)
+Training Loss:0.5114
+Best Accuracy: 66.875000%
+Time Elapsed: 0h 1m 57s
+
+--------------------------------------------------------
+
+
+Train Epoch: 14 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.561484
+Train Epoch: 14 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.415146
+Train Epoch: 14 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.481336
+Train Epoch: 14 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.407047
+Train Epoch: 14 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.520551
+Train Epoch: 14 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.485043
+Train Epoch: 14 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.481568
+Train Epoch: 14 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.651891
+Train Epoch: 14 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.449190
+
+
+----------------- Epoch 14 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[41,  7],
+        [46, 58]])
+class 0 accuracy: 47.1264%
+class 1 accuracy: 89.2308%
+
+Validation Loss: 0.6999, Accuracy: 99/160 (62%)
+Training Loss:0.5241
+Best Accuracy: 66.875000%
+Time Elapsed: 0h 2m 5s
+
+--------------------------------------------------------
+
+
+Train Epoch: 15 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.449147
+Train Epoch: 15 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.411441
+Train Epoch: 15 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.477069
+Train Epoch: 15 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.635153
+Train Epoch: 15 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.452534
+Train Epoch: 15 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.590867
+Train Epoch: 15 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.424415
+Train Epoch: 15 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.415425
+Train Epoch: 15 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.876957
+
+
+----------------- Epoch 15 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[40, 12],
+        [47, 53]])
+class 0 accuracy: 45.9770%
+class 1 accuracy: 81.5385%
+
+Validation Loss: 0.7367, Accuracy: 93/160 (58%)
+Training Loss:0.5125
+Best Accuracy: 66.875000%
+Time Elapsed: 0h 2m 14s
+
+--------------------------------------------------------
+
+
+Train Epoch: 16 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.543506
+Train Epoch: 16 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.353485
+Train Epoch: 16 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.435948
+Train Epoch: 16 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.528326
+Train Epoch: 16 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.466050
+Train Epoch: 16 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.494179
+Train Epoch: 16 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.625811
+Train Epoch: 16 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.514332
+Train Epoch: 16 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.554017
+
+
+----------------- Epoch 16 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[61, 21],
+        [26, 44]])
+class 0 accuracy: 70.1149%
+class 1 accuracy: 67.6923%
+
+Validation Loss: 0.6479, Accuracy: 105/160 (66%)
+Training Loss:0.5166
+Best Accuracy: 66.875000%
+Time Elapsed: 0h 2m 23s
+
+--------------------------------------------------------
+
+
+Train Epoch: 17 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.512786
+Train Epoch: 17 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.421711
+Train Epoch: 17 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.503222
+Train Epoch: 17 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.376882
+Train Epoch: 17 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.541294
+Train Epoch: 17 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.639563
+Train Epoch: 17 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.347277
+Train Epoch: 17 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.489274
+Train Epoch: 17 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.404535
+
+
+----------------- Epoch 17 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[50, 15],
+        [37, 50]])
+class 0 accuracy: 57.4713%
+class 1 accuracy: 76.9231%
+
+Validation Loss: 0.7854, Accuracy: 100/160 (62%)
+Training Loss:0.5060
+Best Accuracy: 66.875000%
+Time Elapsed: 0h 2m 31s
+
+--------------------------------------------------------
+
+
+Train Epoch: 18 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.461710
+Train Epoch: 18 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.575185
+Train Epoch: 18 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.585490
+Train Epoch: 18 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.466206
+Train Epoch: 18 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.391104
+Train Epoch: 18 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.457239
+Train Epoch: 18 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.556528
+Train Epoch: 18 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.486847
+Train Epoch: 18 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.470457
+
+
+----------------- Epoch 18 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[65, 13],
+        [22, 52]])
+class 0 accuracy: 74.7126%
+class 1 accuracy: 80.0000%
+
+Validation Loss: 0.6230, Accuracy: 117/160 (73%)
+Training Loss:0.4776
+Best Accuracy: 73.125000%
+Time Elapsed: 0h 2m 39s
+
+--------------------------------------------------------
+
+
+Train Epoch: 19 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.452213
+Train Epoch: 19 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.418098
+Train Epoch: 19 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.416840
+Train Epoch: 19 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.832605
+Train Epoch: 19 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.526097
+Train Epoch: 19 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.472026
+Train Epoch: 19 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.663687
+Train Epoch: 19 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.419856
+Train Epoch: 19 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.367025
+
+
+----------------- Epoch 19 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[48, 15],
+        [39, 50]])
+class 0 accuracy: 55.1724%
+class 1 accuracy: 76.9231%
+
+Validation Loss: 0.7666, Accuracy: 98/160 (61%)
+Training Loss:0.5092
+Best Accuracy: 73.125000%
+Time Elapsed: 0h 2m 47s
+
+--------------------------------------------------------
+
+
+================================ Finished Training ================================
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[48, 15],
+        [39, 50]])
+class 0 accuracy: 55.1724%
+class 1 accuracy: 76.9231%
+
+Validation Loss: 0.7654, Accuracy: 98/160 (61%)
+Best Accuracy: 73.125000%
+Time Elapsed: 0h 2m 49s
+Epochs: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+Val_Accuracies: [54.375, 54.375, 48.125, 43.125, 49.375, 62.5, 60.625, 63.125, 61.875, 61.25, 66.875, 61.25, 58.75, 63.75, 61.875, 58.125, 65.625, 62.5, 73.125, 61.25]
+Val_Losses: [0.6914872646331787, 0.6750946044921875, 0.6533442735671997, 0.7214144349098206, 0.7130734205245972, 0.5908488988876343, 0.5933011412620545, 0.5877311825752258, 0.6098739981651307, 0.6030152320861817, 0.5900939464569092, 0.5974537193775177, 0.6370548605918884, 0.604420667886734, 0.6998819828033447, 0.7367476344108581, 0.6478653371334075, 0.7854262053966522, 0.6230273306369781, 0.7666171491146088]
+Train_Losses: [138300.7687514048, 0.6843451637970773, 0.9666119782548201, 0.6526812785550168, 0.6063412835723475, 0.6148075367275038, 0.5912406460234993, 0.5838298766236556, 0.5519756423799616, 0.5761015901440069, 0.5410059408137673, 0.547073063097502, 0.5284274173410315, 0.5114134220700515, 0.5241264512664393, 0.5125414164442765, 0.5165788139167585, 0.506023279930416, 0.4775913859668531, 0.5091984444542935]
+
+FOLD 1
+=================================================================
+Train Epoch: 0 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 145.264465
+Train Epoch: 0 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.693147
+Train Epoch: 0 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.693147
+Train Epoch: 0 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.693147
+Train Epoch: 0 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.693147
+Train Epoch: 0 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.693147
+Train Epoch: 0 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.693147
+Train Epoch: 0 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.693147
+Train Epoch: 0 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.693147
+
+
+----------------- Epoch 0 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[88, 64],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6931, Accuracy: 88/160 (55%)
+Training Loss:2344.6727
+Best Accuracy: 55.000000%
+Time Elapsed: 0h 2m 57s
+
+--------------------------------------------------------
+
+
+Train Epoch: 1 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.693147
+Train Epoch: 1 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.693147
+Train Epoch: 1 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.693147
+Train Epoch: 1 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.693147
+Train Epoch: 1 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.693147
+Train Epoch: 1 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.693147
+Train Epoch: 1 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.693147
+Train Epoch: 1 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.693147
+Train Epoch: 1 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.693147
+
+
+----------------- Epoch 1 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[88, 64],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6931, Accuracy: 88/160 (55%)
+Training Loss:0.6931
+Best Accuracy: 55.000000%
+Time Elapsed: 0h 3m 5s
+
+--------------------------------------------------------
+
+
+Train Epoch: 2 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.693147
+Train Epoch: 2 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.693147
+Train Epoch: 2 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.693147
+Train Epoch: 2 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.693147
+Train Epoch: 2 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.693147
+Train Epoch: 2 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.693147
+Train Epoch: 2 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.693147
+Train Epoch: 2 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.693147
+Train Epoch: 2 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.693147
+
+
+----------------- Epoch 2 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[88, 64],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6931, Accuracy: 88/160 (55%)
+Training Loss:0.6931
+Best Accuracy: 55.000000%
+Time Elapsed: 0h 3m 15s
+
+--------------------------------------------------------
+
+
+Train Epoch: 3 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.693147
+Train Epoch: 3 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.693147
+Train Epoch: 3 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.693147
+Train Epoch: 3 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.693147
+Train Epoch: 3 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.693147
+Train Epoch: 3 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.693147
+Train Epoch: 3 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.693147
+Train Epoch: 3 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.693147
+Train Epoch: 3 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.693147
+
+
+----------------- Epoch 3 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[88, 64],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6931, Accuracy: 88/160 (55%)
+Training Loss:0.6931
+Best Accuracy: 55.000000%
+Time Elapsed: 0h 3m 25s
+
+--------------------------------------------------------
+
+
+Train Epoch: 4 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.693147
+Train Epoch: 4 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.693147
+Train Epoch: 4 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.693147
+Train Epoch: 4 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.693147
+Train Epoch: 4 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.693147
+Train Epoch: 4 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.693147
+Train Epoch: 4 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.693147
+Train Epoch: 4 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.693147
+Train Epoch: 4 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.693147
+
+
+----------------- Epoch 4 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[88, 64],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6931, Accuracy: 88/160 (55%)
+Training Loss:0.6931
+Best Accuracy: 55.000000%
+Time Elapsed: 0h 3m 33s
+
+--------------------------------------------------------
+
+
+Train Epoch: 5 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.693147
+Train Epoch: 5 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.693147
+Train Epoch: 5 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.693147
+Train Epoch: 5 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.693147
+Train Epoch: 5 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.693147
+Train Epoch: 5 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.693147
+Train Epoch: 5 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.693147
+Train Epoch: 5 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.693147
+Train Epoch: 5 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.693147
+
+
+----------------- Epoch 5 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[88, 64],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6931, Accuracy: 88/160 (55%)
+Training Loss:0.6931
+Best Accuracy: 55.000000%
+Time Elapsed: 0h 3m 43s
+
+--------------------------------------------------------
+
+
+Train Epoch: 6 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.693147
+Train Epoch: 6 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.693147
+Train Epoch: 6 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.693147
+Train Epoch: 6 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.693147
+Train Epoch: 6 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.693147
+Train Epoch: 6 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.693147
+Train Epoch: 6 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.693147
+Train Epoch: 6 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.693147
+Train Epoch: 6 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.693147
+
+
+----------------- Epoch 6 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[88, 64],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6931, Accuracy: 88/160 (55%)
+Training Loss:0.6931
+Best Accuracy: 55.000000%
+Time Elapsed: 0h 3m 52s
+
+--------------------------------------------------------
+
+
+Train Epoch: 7 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.693147
+Train Epoch: 7 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.693147
+Train Epoch: 7 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.693147
+Train Epoch: 7 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.693147
+Train Epoch: 7 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.693147
+Train Epoch: 7 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.693147
+Train Epoch: 7 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.693147
+Train Epoch: 7 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.693147
+Train Epoch: 7 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.693147
+
+
+----------------- Epoch 7 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[88, 64],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6931, Accuracy: 88/160 (55%)
+Training Loss:0.6931
+Best Accuracy: 55.000000%
+Time Elapsed: 0h 4m 0s
+
+--------------------------------------------------------
+
+
+Train Epoch: 8 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.693147
+Train Epoch: 8 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.693147
+Train Epoch: 8 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.693147
+Train Epoch: 8 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.693147
+Train Epoch: 8 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.693147
+Train Epoch: 8 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.693147
+Train Epoch: 8 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.693147
+Train Epoch: 8 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.693147
+Train Epoch: 8 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.693147
+
+
+----------------- Epoch 8 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[88, 64],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6931, Accuracy: 88/160 (55%)
+Training Loss:0.6931
+Best Accuracy: 55.000000%
+Time Elapsed: 0h 4m 8s
+
+--------------------------------------------------------
+
+
+Train Epoch: 9 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.693147
+Train Epoch: 9 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.693147
+Train Epoch: 9 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.693147
+Train Epoch: 9 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.693147
+Train Epoch: 9 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.693147
+Train Epoch: 9 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.693147
+Train Epoch: 9 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.693147
+Train Epoch: 9 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.693147
+Train Epoch: 9 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.693147
+
+
+----------------- Epoch 9 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[88, 64],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6931, Accuracy: 88/160 (55%)
+Training Loss:0.6931
+Best Accuracy: 55.000000%
+Time Elapsed: 0h 4m 16s
+
+--------------------------------------------------------
+
+
+Train Epoch: 10 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.693147
+Train Epoch: 10 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.693147
+Train Epoch: 10 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.693147
+Train Epoch: 10 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.693147
+Train Epoch: 10 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.693147
+Train Epoch: 10 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.693147
+Train Epoch: 10 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.693147
+Train Epoch: 10 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.693147
+Train Epoch: 10 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.693147
+
+
+----------------- Epoch 10 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[88, 64],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6931, Accuracy: 88/160 (55%)
+Training Loss:0.6931
+Best Accuracy: 55.000000%
+Time Elapsed: 0h 4m 24s
+
+--------------------------------------------------------
+
+
+Train Epoch: 11 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.693147
+Train Epoch: 11 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.693147
+Train Epoch: 11 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.693147
+Train Epoch: 11 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.693147
+Train Epoch: 11 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.693147
+Train Epoch: 11 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.693147
+Train Epoch: 11 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.693147
+Train Epoch: 11 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.693147
+Train Epoch: 11 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.693147
+
+
+----------------- Epoch 11 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[88, 64],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6931, Accuracy: 88/160 (55%)
+Training Loss:0.6931
+Best Accuracy: 55.000000%
+Time Elapsed: 0h 4m 32s
+
+--------------------------------------------------------
+
+
+Train Epoch: 12 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.693147
+Train Epoch: 12 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.693147
+Train Epoch: 12 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.693147
+Train Epoch: 12 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.693147
+Train Epoch: 12 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.693147
+Train Epoch: 12 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.693147
+Train Epoch: 12 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.693147
+Train Epoch: 12 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.693147
+Train Epoch: 12 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.693147
+
+
+----------------- Epoch 12 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[88, 64],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6931, Accuracy: 88/160 (55%)
+Training Loss:0.6931
+Best Accuracy: 55.000000%
+Time Elapsed: 0h 4m 40s
+
+--------------------------------------------------------
+
+
+Train Epoch: 13 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.693147
+Train Epoch: 13 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.693147
+Train Epoch: 13 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.693147
+Train Epoch: 13 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.693147
+Train Epoch: 13 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.693147
+Train Epoch: 13 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.693147
+Train Epoch: 13 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.693147
+Train Epoch: 13 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.693147
+Train Epoch: 13 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.693147
+
+
+----------------- Epoch 13 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[88, 64],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6931, Accuracy: 88/160 (55%)
+Training Loss:0.6931
+Best Accuracy: 55.000000%
+Time Elapsed: 0h 4m 48s
+
+--------------------------------------------------------
+
+
+Train Epoch: 14 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.693147
+Train Epoch: 14 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.693147
+Train Epoch: 14 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.693147
+Train Epoch: 14 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.693147
+Train Epoch: 14 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.693147
+Train Epoch: 14 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.693147
+Train Epoch: 14 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.693147
+Train Epoch: 14 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.693147
+Train Epoch: 14 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.693147
+
+
+----------------- Epoch 14 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[88, 64],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6931, Accuracy: 88/160 (55%)
+Training Loss:0.6931
+Best Accuracy: 55.000000%
+Time Elapsed: 0h 4m 56s
+
+--------------------------------------------------------
+
+
+Train Epoch: 15 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.693147
+Train Epoch: 15 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.693147
+Train Epoch: 15 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.693147
+Train Epoch: 15 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.693147
+Train Epoch: 15 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.693147
+Train Epoch: 15 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.693147
+Train Epoch: 15 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.693147
+Train Epoch: 15 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.693147
+Train Epoch: 15 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.693147
+
+
+----------------- Epoch 15 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[88, 64],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6931, Accuracy: 88/160 (55%)
+Training Loss:0.6931
+Best Accuracy: 55.000000%
+Time Elapsed: 0h 5m 4s
+
+--------------------------------------------------------
+
+
+Train Epoch: 16 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.693147
+Train Epoch: 16 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.693147
+Train Epoch: 16 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.693147
+Train Epoch: 16 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.693147
+Train Epoch: 16 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.693147
+Train Epoch: 16 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.693147
+Train Epoch: 16 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.693147
+Train Epoch: 16 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.693147
+Train Epoch: 16 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.693147
+
+
+----------------- Epoch 16 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[88, 64],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6931, Accuracy: 88/160 (55%)
+Training Loss:0.6931
+Best Accuracy: 55.000000%
+Time Elapsed: 0h 5m 13s
+
+--------------------------------------------------------
+
+
+Train Epoch: 17 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.693147
+Train Epoch: 17 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.693147
+Train Epoch: 17 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.693147
+Train Epoch: 17 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.693147
+Train Epoch: 17 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.693147
+Train Epoch: 17 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.693147
+Train Epoch: 17 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.693147
+Train Epoch: 17 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.693147
+Train Epoch: 17 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.693147
+
+
+----------------- Epoch 17 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[88, 64],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6931, Accuracy: 88/160 (55%)
+Training Loss:0.6931
+Best Accuracy: 55.000000%
+Time Elapsed: 0h 5m 21s
+
+--------------------------------------------------------
+
+
+Train Epoch: 18 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.693147
+Train Epoch: 18 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.693147
+Train Epoch: 18 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.693147
+Train Epoch: 18 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.693147
+Train Epoch: 18 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.693147
+Train Epoch: 18 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.693147
+Train Epoch: 18 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.693147
+Train Epoch: 18 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.693147
+Train Epoch: 18 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.693147
+
+
+----------------- Epoch 18 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[88, 64],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6931, Accuracy: 88/160 (55%)
+Training Loss:0.6931
+Best Accuracy: 55.000000%
+Time Elapsed: 0h 5m 30s
+
+--------------------------------------------------------
+
+
+Train Epoch: 19 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.693147
+Train Epoch: 19 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.693147
+Train Epoch: 19 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.693147
+Train Epoch: 19 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.693147
+Train Epoch: 19 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.693147
+Train Epoch: 19 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.693147
+Train Epoch: 19 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.693147
+Train Epoch: 19 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.693147
+Train Epoch: 19 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.693147
+
+
+----------------- Epoch 19 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[88, 64],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6931, Accuracy: 88/160 (55%)
+Training Loss:0.6931
+Best Accuracy: 55.000000%
+Time Elapsed: 0h 5m 39s
+
+--------------------------------------------------------
+
+
+================================ Finished Training ================================
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[88, 64],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6931, Accuracy: 88/160 (55%)
+Best Accuracy: 55.000000%
+Time Elapsed: 0h 5m 40s
+Epochs: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+Val_Accuracies: [55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0, 55.0]
+Val_Losses: [0.6931472897529602, 0.6931472897529602, 0.6931472897529602, 0.6931472897529602, 0.6931472897529602, 0.6931472897529602, 0.6931472897529602, 0.6931472897529602, 0.6931472897529602, 0.6931472897529602, 0.6931472897529602, 0.6931472897529602, 0.6931472897529602, 0.6931472897529602, 0.6931472897529602, 0.6931472897529602, 0.6931472897529602, 0.6931472897529602, 0.6931472897529602, 0.6931472897529602]
+Train_Losses: [2344.6726904417337, 0.6931472985368026, 0.6931472985368026, 0.6931472985368026, 0.6931472985368026, 0.6931472985368026, 0.6931472985368026, 0.6931472985368026, 0.6931472985368026, 0.6931472985368026, 0.6931472985368026, 0.6931472985368026, 0.6931472985368026, 0.6931472985368026, 0.6931472985368026, 0.6931472985368026, 0.6931472985368026, 0.6931472985368026, 0.6931472985368026, 0.6931472985368026]
+
+FOLD 2
+=================================================================
+Train Epoch: 0 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 99.814926
+Train Epoch: 0 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.990628
+Train Epoch: 0 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.696222
+Train Epoch: 0 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.702234
+Train Epoch: 0 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.693147
+Train Epoch: 0 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.693147
+Train Epoch: 0 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.693147
+Train Epoch: 0 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.693147
+Train Epoch: 0 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.693140
+
+
+----------------- Epoch 0 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[79, 72],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6931, Accuracy: 79/160 (49%)
+Training Loss:768.6991
+Best Accuracy: 49.375000%
+Time Elapsed: 0h 5m 49s
+
+--------------------------------------------------------
+
+
+Train Epoch: 1 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.692950
+Train Epoch: 1 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.687858
+Train Epoch: 1 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 1.036235
+Train Epoch: 1 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.670866
+Train Epoch: 1 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.693421
+Train Epoch: 1 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.691872
+Train Epoch: 1 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.692854
+Train Epoch: 1 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.694529
+Train Epoch: 1 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.692828
+
+
+----------------- Epoch 1 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[79, 72],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6927, Accuracy: 79/160 (49%)
+Training Loss:0.8187
+Best Accuracy: 49.375000%
+Time Elapsed: 0h 5m 58s
+
+--------------------------------------------------------
+
+
+Train Epoch: 2 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.693204
+Train Epoch: 2 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.689773
+Train Epoch: 2 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.680644
+Train Epoch: 2 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.701712
+Train Epoch: 2 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.685573
+Train Epoch: 2 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.671275
+Train Epoch: 2 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.684548
+Train Epoch: 2 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.687841
+Train Epoch: 2 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.684481
+
+
+----------------- Epoch 2 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[79, 72],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6726, Accuracy: 79/160 (49%)
+Training Loss:0.6859
+Best Accuracy: 49.375000%
+Time Elapsed: 0h 6m 7s
+
+--------------------------------------------------------
+
+
+Train Epoch: 3 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.588490
+Train Epoch: 3 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.681536
+Train Epoch: 3 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.633545
+Train Epoch: 3 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.710044
+Train Epoch: 3 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.602206
+Train Epoch: 3 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.675271
+Train Epoch: 3 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.634089
+Train Epoch: 3 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.458218
+Train Epoch: 3 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 1.065365
+
+
+----------------- Epoch 3 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[79, 72],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6820, Accuracy: 79/160 (49%)
+Training Loss:0.6504
+Best Accuracy: 49.375000%
+Time Elapsed: 0h 6m 15s
+
+--------------------------------------------------------
+
+
+Train Epoch: 4 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.670292
+Train Epoch: 4 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.650354
+Train Epoch: 4 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.605431
+Train Epoch: 4 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.553254
+Train Epoch: 4 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.535435
+Train Epoch: 4 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.671563
+Train Epoch: 4 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.641050
+Train Epoch: 4 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.580524
+Train Epoch: 4 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.524780
+
+
+----------------- Epoch 4 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[79, 72],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.5937, Accuracy: 79/160 (49%)
+Training Loss:0.6126
+Best Accuracy: 49.375000%
+Time Elapsed: 0h 6m 23s
+
+--------------------------------------------------------
+
+
+Train Epoch: 5 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.500758
+Train Epoch: 5 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.577290
+Train Epoch: 5 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.582320
+Train Epoch: 5 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.582868
+Train Epoch: 5 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.531994
+Train Epoch: 5 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.541413
+Train Epoch: 5 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.555403
+Train Epoch: 5 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.732964
+Train Epoch: 5 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.595607
+
+
+----------------- Epoch 5 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[79, 72],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6026, Accuracy: 79/160 (49%)
+Training Loss:0.5863
+Best Accuracy: 49.375000%
+Time Elapsed: 0h 6m 32s
+
+--------------------------------------------------------
+
+
+Train Epoch: 6 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.571416
+Train Epoch: 6 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.543583
+Train Epoch: 6 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.514279
+Train Epoch: 6 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.591950
+Train Epoch: 6 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.648379
+Train Epoch: 6 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.577855
+Train Epoch: 6 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.540510
+Train Epoch: 6 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.487417
+Train Epoch: 6 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.517308
+
+
+----------------- Epoch 6 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[79, 72],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.5774, Accuracy: 79/160 (49%)
+Training Loss:0.5686
+Best Accuracy: 49.375000%
+Time Elapsed: 0h 6m 42s
+
+--------------------------------------------------------
+
+
+Train Epoch: 7 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.601310
+Train Epoch: 7 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.414555
+Train Epoch: 7 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.562341
+Train Epoch: 7 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.534107
+Train Epoch: 7 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.563093
+Train Epoch: 7 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.668619
+Train Epoch: 7 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.579504
+Train Epoch: 7 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.612729
+Train Epoch: 7 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.590069
+
+
+----------------- Epoch 7 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[79, 72],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.5692, Accuracy: 79/160 (49%)
+Training Loss:0.5693
+Best Accuracy: 49.375000%
+Time Elapsed: 0h 6m 51s
+
+--------------------------------------------------------
+
+
+Train Epoch: 8 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.558053
+Train Epoch: 8 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.516913
+Train Epoch: 8 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.557280
+Train Epoch: 8 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.503823
+Train Epoch: 8 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.672945
+Train Epoch: 8 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.613183
+Train Epoch: 8 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.521313
+Train Epoch: 8 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.536847
+Train Epoch: 8 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.386435
+
+
+----------------- Epoch 8 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[79, 72],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6511, Accuracy: 79/160 (49%)
+Training Loss:0.5570
+Best Accuracy: 49.375000%
+Time Elapsed: 0h 7m 0s
+
+--------------------------------------------------------
+
+
+Train Epoch: 9 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.557363
+Train Epoch: 9 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.560311
+Train Epoch: 9 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.573614
+Train Epoch: 9 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.512957
+Train Epoch: 9 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.491529
+Train Epoch: 9 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.795772
+Train Epoch: 9 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.589557
+Train Epoch: 9 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.602566
+Train Epoch: 9 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.636210
+
+
+----------------- Epoch 9 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[79, 72],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.5746, Accuracy: 79/160 (49%)
+Training Loss:0.5863
+Best Accuracy: 49.375000%
+Time Elapsed: 0h 7m 8s
+
+--------------------------------------------------------
+
+
+Train Epoch: 10 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.616929
+Train Epoch: 10 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.659657
+Train Epoch: 10 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.521780
+Train Epoch: 10 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.536512
+Train Epoch: 10 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.517195
+Train Epoch: 10 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.569341
+Train Epoch: 10 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.497045
+Train Epoch: 10 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.501275
+Train Epoch: 10 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.601930
+
+
+----------------- Epoch 10 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[79, 72],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6076, Accuracy: 79/160 (49%)
+Training Loss:0.5485
+Best Accuracy: 49.375000%
+Time Elapsed: 0h 7m 18s
+
+--------------------------------------------------------
+
+
+Train Epoch: 11 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.549171
+Train Epoch: 11 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.547355
+Train Epoch: 11 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.685515
+Train Epoch: 11 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.568263
+Train Epoch: 11 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.609106
+Train Epoch: 11 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.522613
+Train Epoch: 11 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.538086
+Train Epoch: 11 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.511044
+Train Epoch: 11 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.500838
+
+
+----------------- Epoch 11 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[79, 72],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.5730, Accuracy: 79/160 (49%)
+Training Loss:0.5591
+Best Accuracy: 49.375000%
+Time Elapsed: 0h 7m 27s
+
+--------------------------------------------------------
+
+
+Train Epoch: 12 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.649159
+Train Epoch: 12 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.609647
+Train Epoch: 12 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.534105
+Train Epoch: 12 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.536063
+Train Epoch: 12 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.430622
+Train Epoch: 12 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.432374
+Train Epoch: 12 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.559047
+Train Epoch: 12 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.420039
+Train Epoch: 12 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.589910
+
+
+----------------- Epoch 12 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[79, 72],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.5682, Accuracy: 79/160 (49%)
+Training Loss:0.5296
+Best Accuracy: 49.375000%
+Time Elapsed: 0h 7m 35s
+
+--------------------------------------------------------
+
+
+Train Epoch: 13 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.499526
+Train Epoch: 13 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.502815
+Train Epoch: 13 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.601407
+Train Epoch: 13 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.417868
+Train Epoch: 13 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.529789
+Train Epoch: 13 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.561486
+Train Epoch: 13 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.583534
+Train Epoch: 13 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.531508
+Train Epoch: 13 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.448955
+
+
+----------------- Epoch 13 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[79, 72],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6074, Accuracy: 79/160 (49%)
+Training Loss:0.5274
+Best Accuracy: 49.375000%
+Time Elapsed: 0h 7m 43s
+
+--------------------------------------------------------
+
+
+Train Epoch: 14 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.745056
+Train Epoch: 14 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.498439
+Train Epoch: 14 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.525225
+Train Epoch: 14 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.541378
+Train Epoch: 14 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.561776
+Train Epoch: 14 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.594768
+Train Epoch: 14 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.518170
+Train Epoch: 14 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.535901
+Train Epoch: 14 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.510656
+
+
+----------------- Epoch 14 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[79, 72],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.5597, Accuracy: 79/160 (49%)
+Training Loss:0.5330
+Best Accuracy: 49.375000%
+Time Elapsed: 0h 7m 52s
+
+--------------------------------------------------------
+
+
+Train Epoch: 15 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.556847
+Train Epoch: 15 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.578248
+Train Epoch: 15 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.573476
+Train Epoch: 15 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.355068
+Train Epoch: 15 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.519310
+Train Epoch: 15 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.450572
+Train Epoch: 15 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.621316
+Train Epoch: 15 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.440006
+Train Epoch: 15 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.513111
+
+
+----------------- Epoch 15 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[79, 72],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.5563, Accuracy: 79/160 (49%)
+Training Loss:0.5128
+Best Accuracy: 49.375000%
+Time Elapsed: 0h 7m 59s
+
+--------------------------------------------------------
+
+
+Train Epoch: 16 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.444441
+Train Epoch: 16 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.483338
+Train Epoch: 16 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.657159
+Train Epoch: 16 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.503367
+Train Epoch: 16 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.506350
+Train Epoch: 16 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.498412
+Train Epoch: 16 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.408852
+Train Epoch: 16 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.428773
+Train Epoch: 16 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.647775
+
+
+----------------- Epoch 16 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[79, 72],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6209, Accuracy: 79/160 (49%)
+Training Loss:0.5198
+Best Accuracy: 49.375000%
+Time Elapsed: 0h 8m 7s
+
+--------------------------------------------------------
+
+
+Train Epoch: 17 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.421817
+Train Epoch: 17 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.451593
+Train Epoch: 17 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.370191
+Train Epoch: 17 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.449084
+Train Epoch: 17 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.423956
+Train Epoch: 17 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.518704
+Train Epoch: 17 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.449926
+Train Epoch: 17 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.808343
+Train Epoch: 17 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.555779
+
+
+----------------- Epoch 17 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[79, 72],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.5870, Accuracy: 79/160 (49%)
+Training Loss:0.5116
+Best Accuracy: 49.375000%
+Time Elapsed: 0h 8m 15s
+
+--------------------------------------------------------
+
+
+Train Epoch: 18 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.391624
+Train Epoch: 18 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.571108
+Train Epoch: 18 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.446077
+Train Epoch: 18 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.561663
+Train Epoch: 18 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.499213
+Train Epoch: 18 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.503818
+Train Epoch: 18 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.482132
+Train Epoch: 18 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.430851
+Train Epoch: 18 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.625633
+
+
+----------------- Epoch 18 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[79, 72],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.5969, Accuracy: 79/160 (49%)
+Training Loss:0.4925
+Best Accuracy: 49.375000%
+Time Elapsed: 0h 8m 23s
+
+--------------------------------------------------------
+
+
+Train Epoch: 19 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.406136
+Train Epoch: 19 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.601313
+Train Epoch: 19 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.527715
+Train Epoch: 19 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.464437
+Train Epoch: 19 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.494213
+Train Epoch: 19 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.397577
+Train Epoch: 19 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.456877
+Train Epoch: 19 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.627490
+Train Epoch: 19 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.511456
+
+
+----------------- Epoch 19 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[79, 72],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.5840, Accuracy: 79/160 (49%)
+Training Loss:0.4954
+Best Accuracy: 49.375000%
+Time Elapsed: 0h 8m 31s
+
+--------------------------------------------------------
+
+
+================================ Finished Training ================================
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[79, 72],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.5891, Accuracy: 79/160 (49%)
+Best Accuracy: 49.375000%
+Time Elapsed: 0h 8m 32s
+Epochs: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+Val_Accuracies: [49.375, 49.375, 49.375, 49.375, 49.375, 49.375, 49.375, 49.375, 49.375, 49.375, 49.375, 49.375, 49.375, 49.375, 49.375, 49.375, 49.375, 49.375, 49.375, 49.375]
+Val_Losses: [0.6931386470794678, 0.6926899790763855, 0.6726374983787536, 0.6819761395454407, 0.5936989605426788, 0.6025675654411315, 0.5773945450782776, 0.5691518068313599, 0.6510683178901673, 0.5746221899986267, 0.6076215863227844, 0.5729607343673706, 0.5682347774505615, 0.6074416637420654, 0.5596538424491883, 0.5563153445720672, 0.6208885431289672, 0.5869990706443786, 0.5969499170780181, 0.5839642286300659]
+Train_Losses: [768.6991131619403, 0.818652447901274, 0.6859382045896429, 0.6504399400008353, 0.6126130035049037, 0.5862665678325453, 0.568574961863066, 0.5692819388289201, 0.5570108655251955, 0.5863115473797447, 0.5485220426007321, 0.5590748928095165, 0.5296099421225096, 0.5274367269716764, 0.5329565578385403, 0.5128000582519331, 0.5197605694595137, 0.5116396216969741, 0.4925452078643598, 0.49542854177324397]
+
+FOLD 3
+=================================================================
+Train Epoch: 0 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.674043
+Train Epoch: 0 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.693032
+Train Epoch: 0 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.778622
+Train Epoch: 0 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.693147
+Train Epoch: 0 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.693147
+Train Epoch: 0 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.693147
+Train Epoch: 0 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.693147
+Train Epoch: 0 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.693147
+Train Epoch: 0 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.693147
+
+
+----------------- Epoch 0 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[75, 76],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6931, Accuracy: 75/160 (47%)
+Training Loss:9358.1532
+Best Accuracy: 46.875000%
+Time Elapsed: 0h 8m 42s
+
+--------------------------------------------------------
+
+
+Train Epoch: 1 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.693147
+Train Epoch: 1 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.693147
+Train Epoch: 1 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.693147
+Train Epoch: 1 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.693147
+Train Epoch: 1 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.693147
+Train Epoch: 1 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.693147
+Train Epoch: 1 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.693147
+Train Epoch: 1 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.693147
+Train Epoch: 1 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.693147
+
+
+----------------- Epoch 1 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[75, 76],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6931, Accuracy: 75/160 (47%)
+Training Loss:0.6931
+Best Accuracy: 46.875000%
+Time Elapsed: 0h 8m 50s
+
+--------------------------------------------------------
+
+
+Train Epoch: 2 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.693147
+Train Epoch: 2 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.693147
+Train Epoch: 2 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.693147
+Train Epoch: 2 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.693147
+Train Epoch: 2 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.693147
+Train Epoch: 2 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.693147
+Train Epoch: 2 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.693147
+Train Epoch: 2 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.693147
+Train Epoch: 2 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.693147
+
+
+----------------- Epoch 2 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[75, 76],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6931, Accuracy: 75/160 (47%)
+Training Loss:0.6931
+Best Accuracy: 46.875000%
+Time Elapsed: 0h 9m 0s
+
+--------------------------------------------------------
+
+
+Train Epoch: 3 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.693147
+Train Epoch: 3 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.693147
+Train Epoch: 3 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.693147
+Train Epoch: 3 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.693147
+Train Epoch: 3 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.693147
+Train Epoch: 3 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.693147
+Train Epoch: 3 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.693147
+Train Epoch: 3 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.693147
+Train Epoch: 3 Iteration: 18 [576/608 (95%)]	 Batch 18 Loss: 0.693147
+
+
+----------------- Epoch 3 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[75, 76],
+        [ 0,  0]])
+class 0 accuracy: 100.0000%
+class 1 accuracy: 0.0000%
+
+Validation Loss: 0.6931, Accuracy: 75/160 (47%)
+Training Loss:0.6931
+Best Accuracy: 46.875000%
+Time Elapsed: 0h 9m 10s
+
+--------------------------------------------------------
+
+
+Train Epoch: 4 Iteration: 2 [64/608 (11%)]	 Batch 2 Loss: 0.693147
+Train Epoch: 4 Iteration: 4 [128/608 (21%)]	 Batch 4 Loss: 0.693147
+Train Epoch: 4 Iteration: 6 [192/608 (32%)]	 Batch 6 Loss: 0.693147
+Train Epoch: 4 Iteration: 8 [256/608 (42%)]	 Batch 8 Loss: 0.693147
+Train Epoch: 4 Iteration: 10 [320/608 (53%)]	 Batch 10 Loss: 0.693147
+Train Epoch: 4 Iteration: 12 [384/608 (63%)]	 Batch 12 Loss: 0.693147
+Train Epoch: 4 Iteration: 14 [448/608 (74%)]	 Batch 14 Loss: 0.693147
+Train Epoch: 4 Iteration: 16 [512/608 (84%)]	 Batch 16 Loss: 0.693147
+================================ QUIT ================================
+ Saving Model ...

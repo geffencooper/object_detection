@@ -134,29 +134,30 @@ def create_MNIST_dataset():
 
 # ------------------------------------------------------------------------------------------------ #
 
-def create_ObjectClassifier128_dataset(normalize):
+def create_ObjectClassifier128_dataset(args):
+    normalize = False
+    if args.normalize == "y":
+        normalize = True
+        print("normalize")
+    
     # determine the data transformations and format
     train_transform = transforms.Compose([
             transforms.ToPILImage(),
             transforms.Resize((128, 128)),
-            transforms.Grayscale(num_output_channels=1),
-            transforms.ToTensor(),
-            transforms.RandomHorizontalFlip(),
-            torchvision.transforms.Normalize(
-                                 (0.1307,), (0.3081,)),
-            transforms.RandomAffine(degrees=5,scale=(0.45,1.25),translate=(0.3,0.3))
+            #transforms.Grayscale(num_output_channels=1),
+            transforms.ToTensor()
+           # transforms.RandomHorizontalFlip(),
+            #transforms.RandomAffine(degrees=5,scale=(0.45,1.25),translate=(0.3,0.3))
         ])
     
     test_transform = transforms.Compose([
             transforms.ToPILImage(),
             transforms.Resize((128, 128)),
-            transforms.Grayscale(num_output_channels=1),
-            transforms.ToTensor(),
-            torchvision.transforms.Normalize(
-                                 (0.1307,), (0.3081,))
+            #transforms.Grayscale(num_output_channels=1),
+            transforms.ToTensor()
         ])
     
-    img_dir_path = "/home/geffen/Desktop/Face_Detector/assemble_face_dataset_utils/face_classifier_dataset"
+    img_dir_path = "/home/geffen/Downloads/trash_dataset/binary/"
     
     # create the datasets
     train_dataset = ObjectClassifierDataset(os.path.join(img_dir_path,"train"),train_transform,normalize)
@@ -180,7 +181,12 @@ if __name__  == "__main__":
     # img_data_dir1 = "/home/geffen/Desktop/Face_Detector/assemble_face_dataset_utils/face_classifier_dataset/test"
     # faces_dataset = ObjectClassifierDataset(img_data_dir1,test_transform)
     # faces_dataset.visualize_batch()
-    dataset = create_ObjectClassifier128_dataset(True)[0]
+    class a:
+        def __init__(self,norm):
+            self.normalize = norm
+    args = a(True)
+    
+    dataset = create_ObjectClassifier128_dataset(args)[0]
     dataset.visualize_batch()
     # loader = DataLoader(dataset,batch_size=64)
     # for i,batch in enumerate(loader):

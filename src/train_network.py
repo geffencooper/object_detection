@@ -21,7 +21,7 @@ from sklearn.model_selection import KFold, StratifiedKFold
 from pytorch_dataset import *
 
 dist = [0,0]
-torch.manual_seed(42)
+#torch.manual_seed(42)
 # ===================================================================================================== #
 # ====================================== TRAINING FUNCTION ============================================ #
 # ===================================================================================================== #
@@ -50,19 +50,9 @@ def train_nn(args):
     print("Batch Size: {}\nLearning Rate: {}\nNumber of Epochs: {}\nNormalization:{}\n".format(\
         args.batch_size,args.lr,args.num_epochs,args.normalize))
 
-    # global variables
-    best_val_accuracy = 0
-    lowest_val_loss = 1e+5
-    train_losses = []
-    val_losses = []
-    val_accuracies = []
-    iterations = []
-    epochs = []
-    curr_train_loss = 0
     
     # track best accuracy from each fold
     fold_accuracies = {}
-
 
     # Create and load the datasets
     train_dataset, test_dataset = create_dataset(args)
@@ -70,11 +60,23 @@ def train_nn(args):
     # prepare for k-fold cross-validation
     #kfold = StratifiedKFold(n_splits=int(args.k_folds), shuffle=True)
     kfold = KFold(n_splits=int(args.k_folds), shuffle=True)
-
+    
+    # track model training time
+    start = time.time()
 
     # get the next set of idxs for the current fold
     #for fold, (train_idxs, val_idxs) in enumerate(kfold.split(train_dataset,train_dataset.labels)):
     for fold, (train_idxs, val_idxs) in enumerate(kfold.split(train_dataset)):
+        # global variables for a training fold
+        best_val_accuracy = 0
+        lowest_val_loss = 1e+5
+        train_losses = []
+        val_losses = []
+        val_accuracies = []
+        iterations = []
+        epochs = []
+        curr_train_loss = 0
+        
         # create random samplers used by the dataloader
         train_subsampler = torch.utils.data.SubsetRandomSampler(train_idxs)
         val_subsampler = torch.utils.data.SubsetRandomSampler(val_idxs)
@@ -97,9 +99,6 @@ def train_nn(args):
         optimizer = create_optimizer(model,args)
 
         try:
-            # track model training time
-            start = time.time()
-
             # track total iterations
             num_iter = 0
 
@@ -130,7 +129,7 @@ def train_nn(args):
                     
                     # print training statistics every n batches
                     if i % args.loss_freq == 0 and i != 0:
-                        print("Train Epoch: {} Iteration: {} [{}/{} ({:.0f}%)]\t Batch {} Loss: {:.6f}".format(epoch,i,i*args.batch_size,(len(train_loader)*args.batch_size),100.*i/(len(train_loader)),i,loss.item()))
+                        print("Train Epoch: {} Iteration: {} [{}/{} ({:.0f}%)]\t Batch {} Loss: {:.6f}".format(epoch,i,i*args.batch_size,(len(train_loader.dataset)),100.*i/(len(train_loader)),i,loss.item()))
 
                     # check if need to so a mid-dataset validation pass
                     if args.val_freq != 0:    
@@ -156,7 +155,7 @@ def train_nn(args):
                             if args.classification == "y":
                                 if accuracy > best_val_accuracy:
                                     best_val_accuracy = accuracy
-                                    torch.save(model.state_dict(),os.path.join(args.log_dest,"BEST_model.pth"))
+                                    torch.save(model.state_dict(),os.path.join(args.log_dest,"fold_"+str(fold)+"_BEST_model.pth"))
                                 print("Best Accuracy: {:.6f}%".format(best_val_accuracy))
                             elif args.regression == "y":
                                 # first time so init lowest val loss to first value
@@ -164,7 +163,7 @@ def train_nn(args):
                                     lowest_val_loss = val_loss
                                 elif val_loss < lowest_val_loss:
                                     lowest_val_loss = val_loss
-                                    torch.save(model.state_dict(),os.path.join(args.log_dest,"BEST_model.pth"))
+                                    torch.save(model.state_dict(),os.path.join(args.log_dest,"fold_"+str(fold)+"_BEST_model.pth"))
                                 print("Lowest Validation Loss: {:.6f}".format(lowest_val_loss))
 
 
@@ -197,7 +196,7 @@ def train_nn(args):
                     if args.classification == "y":
                         if accuracy > best_val_accuracy:
                             best_val_accuracy = accuracy
-                            torch.save(model.state_dict(),os.path.join(args.log_dest,"BEST_model.pth"))
+                            torch.save(model.state_dict(),os.path.join(args.log_dest,"fold_"+str(fold)+"_BEST_model.pth"))
                         print("Best Accuracy: {:.6f}%".format(best_val_accuracy))
                     elif args.regression == "y":
                         # first time so init lowest val loss to first value
@@ -205,7 +204,7 @@ def train_nn(args):
                             lowest_val_loss = val_loss
                         elif val_loss < lowest_val_loss:
                             lowest_val_loss = val_loss
-                            torch.save(model.state_dict(),os.path.join(args.log_dest,"BEST_model.pth"))
+                            torch.save(model.state_dict(),os.path.join(args.log_dest,"fold_"+str(fold)+"_BEST_model.pth"))
                         print("Lowest Validation Loss: {:.6f}".format(lowest_val_loss))
 
                     # print the time elapsed
@@ -226,7 +225,7 @@ def train_nn(args):
             if args.classification == "y":
                 if accuracy > best_val_accuracy:
                     best_val_accuracy = accuracy
-                    torch.save(model.state_dict(),os.path.join(args.log_dest,"BEST_model.pth"))
+                    torch.save(model.state_dict(),os.path.join(args.log_dest,"fold_"+str(fold)+"_BEST_model.pth"))
                 print("Best Accuracy: {:.6f}%".format(best_val_accuracy))
             elif args.regression == "y":
                 # first time so init lowest val loss to first value
@@ -234,7 +233,7 @@ def train_nn(args):
                     lowest_val_loss = val_loss
                 elif val_loss < lowest_val_loss:
                     lowest_val_loss = val_loss
-                    torch.save(model.state_dict(),os.path.join(args.log_dest,"BEST_model.pth"))
+                    torch.save(model.state_dict(),os.path.join(args.log_dest,"fold_"+str(fold)+"_BEST_model.pth"))
                 print("Lowest Validation Loss: {:.6f}".format(lowest_val_loss))
 
             # print the time elapsed
@@ -268,7 +267,7 @@ def train_nn(args):
             if args.classification == "y":
                 if accuracy > best_val_accuracy:
                     best_val_accuracy = accuracy
-                    torch.save(model.state_dict(),os.path.join(args.log_dest,"BEST_model.pth"))
+                    torch.save(model.state_dict(),os.path.join(args.log_dest,"fold_"+str(fold)+"_BEST_model.pth"))
                 print("Best Accuracy: {:.6f}%".format(best_val_accuracy))
             elif args.regression == "y":
                 # first time so init lowest val loss to first value
@@ -276,7 +275,7 @@ def train_nn(args):
                     lowest_val_loss = val_loss
                 elif val_loss < lowest_val_loss:
                     lowest_val_loss = val_loss
-                    torch.save(model.state_dict(),os.path.join(args.log_dest,"BEST_model.pth"))
+                    torch.save(model.state_dict(),os.path.join(args.log_dest,"fold_"+str(fold)+"_BEST_model.pth"))
                 print("Lowest Validation Loss: {:.6f}".format(lowest_val_loss))
 
             # print the time elapsed
@@ -300,6 +299,13 @@ def train_nn(args):
         print(f'Fold {key}: {value} %')
         sum += value
     print(f'Average: {sum/len(fold_accuracies.items())} %')
+    # print the time elapsed
+    end = time.time()
+    elapsed = end-start
+    minutes,seconds = divmod(elapsed,60)
+    hours,minutes = divmod(minutes,60)
+    print("Time Elapsed: {}h {}m {}s".format(int(hours),int(minutes),int(seconds)))
+    
 # ===================================== Model Dependent Functions =====================================
 
 # create the dataset used by the corresponding model
@@ -459,19 +465,19 @@ def eval_model(model,data_loader,device,criterion,args,print_idxs=False):
         eval_loss /= num_batches
 
         if args.classification == "y":
-            print("\nValidation Loss: {:.4f}, Accuracy: {}/{} ({:.0f}%)".format(eval_loss,correct,(len(data_loader)*args.batch_size),100.*correct/(len(data_loader)*args.batch_size)))
+            print("\nValidation Loss: {:.4f}, Accuracy: {}/{} ({:.0f}%)".format(eval_loss,correct,(len(data_loader.dataset)),100.*correct/(len(data_loader.dataset))))
         else:
             print("\nValidation Loss: {:.4f}".format(eval_loss))
             
         # show predictions vs ground truth
-        if print_idxs == True:
-            print("validation results")
-            for i,p in enumerate(all_preds):
-                print("idx: {}, P:{:.4f} GT:{}".format(all_idxs[i].item(),all_preds[i].item(),all_labels[i].item()))
+        # if print_idxs == True:
+        #     print("validation results")
+        #     for i,p in enumerate(all_preds):
+        #         print("idx: {}, P:{:.4f} GT:{}".format(all_idxs[i].item(),all_preds[i].item(),all_labels[i].item()))
 
 
     model.train()
-    return 100.*correct/(len(data_loader)*args.batch_size),eval_loss
+    return 100.*correct/(len(data_loader.dataset)),eval_loss
 
 
 '''Helper function to create a confusion matrix of classification results'''

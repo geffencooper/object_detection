@@ -57,7 +57,7 @@ class ObjectClassifier128(torch.nn.Module):
         self.pool = nn.MaxPool2d(2, 2)
         
         # 1x128x128 --> 8x128x128 (padding by 1 so same dimension)
-        self.conv1 = nn.Conv2d(1, 8, 3, padding=1, bias=False)
+        self.conv1 = nn.Conv2d(3, 8, 3, padding=1, bias=False)
         self.conv2 = nn.Conv2d(8, 8, 3, padding=1, bias=False)
         
         # 8x128x128 --> 16x64x64 (padding by 1 so same dimension)
@@ -80,7 +80,7 @@ class ObjectClassifier128(torch.nn.Module):
 
         # flatten to fully connected layer
         self.fc1 = nn.Linear(64*4*4, 10, bias=False)
-        self.fc2 = nn.Linear(10, 2, bias=False)
+        self.fc2 = nn.Linear(10, args.num_classes, bias=False)
 
         # initialize weights
         for m in self.modules():
