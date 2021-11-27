@@ -1,0 +1,18 @@
+============================ Raw Args ============================
+Namespace(batch_size=64, classification='y', dropout='n', dropout_prob=0.0, gpu_i=-1, imbalanced_sampler='n', k_folds='5', l2_reg='n', load_trained='n', log_dest='../models/MNIST-2021-11-16_13-00-02', loss_freq=100, lr=0.005, model_name='MNISTClassifier', normalize='y', num_classes=10, num_epochs=1, optim='SGD', regression='n', root_dir='none', session_name='MNIST', test_data_dir='none', test_labels_csv='none', train_data_dir='none', train_labels_csv='none', trained_path='n', val_freq=0, weight_decay_amnt=0.0, weighted_loss='n')
+
+
+
+================================ Start Training ================================
+
+Session Name: MNIST
+
+Model Name: MNISTClassifier
+Device: cpu
+
+Hyperparameters:
+Batch Size: 64
+Learning Rate: 0.005
+Number of Epochs: 1
+Normalization:y
+

@@ -1,0 +1,198 @@
+============================ Raw Args ============================
+Namespace(batch_size=32, classification='y', dropout='n', dropout_prob=0.0, gpu_i=-1, imbalanced_sampler='n', k_folds='4', l2_reg='n', load_trained='n', log_dest='../models/activity-2021-11-20_14-36-46', loss_freq=200, lr=0.005, model_name='ActivityFCN', normalize='n', num_classes=10, num_epochs=10, optim='Adam', regression='n', root_dir='none', session_name='activity', test_data_dir='none', test_labels_csv='none', train_data_dir='none', train_labels_csv='none', trained_path='n', val_freq=0, weight_decay_amnt=0.0, weighted_loss='n')
+
+
+
+================================ Start Training ================================
+
+Session Name: activity
+
+Model Name: ActivityFCN
+Device: cpu
+
+Hyperparameters:
+Batch Size: 32
+Learning Rate: 0.005
+Number of Epochs: 10
+Normalization:n
+
+
+FOLD 0
+=================================================================
+Train Epoch: 0 Iteration: 200 [6400/60000 (14%)]	 Batch 200 Loss: 0.156378
+Train Epoch: 0 Iteration: 400 [12800/60000 (28%)]	 Batch 400 Loss: 0.223860
+Train Epoch: 0 Iteration: 600 [19200/60000 (43%)]	 Batch 600 Loss: 0.169350
+Train Epoch: 0 Iteration: 800 [25600/60000 (57%)]	 Batch 800 Loss: 0.285896
+Train Epoch: 0 Iteration: 1000 [32000/60000 (71%)]	 Batch 1000 Loss: 0.495164
+Train Epoch: 0 Iteration: 1200 [38400/60000 (85%)]	 Batch 1200 Loss: 0.275620
+Train Epoch: 0 Iteration: 1400 [44800/60000 (100%)]	 Batch 1400 Loss: 0.536887
+
+
+----------------- Epoch 0 -----------------
+
+15000
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[1439,    1,    3,    0,    2,    5,    8,    5,    1,    5],
+        [   0, 1570,    7,    5,    0,    1,    2,    4,    6,    2],
+        [   3,   12, 1426,   23,    8,    8,   12,   22,   14,    0],
+        [   6,   14,   34, 1387,    1,   47,    1,   15,   25,   19],
+        [   1,    5,   17,    0, 1423,    3,    6,   11,    9,   40],
+        [   8,    5,    5,   37,    3, 1201,   20,    6,   17,    9],
+        [  11,    0,    3,    3,   11,   13, 1424,    0,    3,    2],
+        [   1,    6,    9,   10,    6,    5,    0, 1452,    6,   20],
+        [  22,   38,   21,   29,    7,   40,   12,    2, 1336,   17],
+        [   6,    0,   11,    5,   53,   15,    0,   30,   13, 1389]])
+class 0 accuracy: 96.1256%
+class 1 accuracy: 95.0939%
+class 2 accuracy: 92.8385%
+class 3 accuracy: 92.5284%
+class 4 accuracy: 93.9894%
+class 5 accuracy: 89.7608%
+class 6 accuracy: 95.8923%
+class 7 accuracy: 93.8591%
+class 8 accuracy: 93.4266%
+class 9 accuracy: 92.4152%
+
+Validation Loss: 0.2208, Accuracy: 14047/15000 (94%)
+Training Loss:0.3339
+Best Accuracy: 93.646667%
+Time Elapsed: 0h 0m 10s
+
+--------------------------------------------------------
+
+
+Train Epoch: 1 Iteration: 200 [6400/60000 (14%)]	 Batch 200 Loss: 0.088662
+Train Epoch: 1 Iteration: 400 [12800/60000 (28%)]	 Batch 400 Loss: 0.036265
+Train Epoch: 1 Iteration: 600 [19200/60000 (43%)]	 Batch 600 Loss: 0.150240
+Train Epoch: 1 Iteration: 800 [25600/60000 (57%)]	 Batch 800 Loss: 0.081307
+Train Epoch: 1 Iteration: 1000 [32000/60000 (71%)]	 Batch 1000 Loss: 0.153470
+Train Epoch: 1 Iteration: 1200 [38400/60000 (85%)]	 Batch 1200 Loss: 0.206763
+Train Epoch: 1 Iteration: 1400 [44800/60000 (100%)]	 Batch 1400 Loss: 0.060810
+
+
+----------------- Epoch 1 -----------------
+
+15000
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[1457,    0,    7,    3,    2,    9,   12,    4,    3,    4],
+        [   1, 1629,   42,   13,   10,   10,    2,   17,   58,   11],
+        [   1,    4, 1340,   13,   17,    2,    3,   19,    7,    3],
+        [   4,    6,   93, 1359,    5,   13,    1,   28,  105,   12],
+        [   2,    0,    7,    0, 1430,    5,    1,   19,    8,   58],
+        [   6,    4,    4,   91,    1, 1253,    7,    8,   83,   27],
+        [  16,    2,   18,    4,   22,   37, 1459,    1,   21,    2],
+        [   3,    1,   17,    7,    1,    3,    0, 1412,    2,   21],
+        [   5,    3,    6,    7,    0,    0,    0,    1, 1110,    9],
+        [   2,    2,    2,    2,   26,    6,    0,   38,   33, 1356]])
+class 0 accuracy: 97.3280%
+class 1 accuracy: 98.6675%
+class 2 accuracy: 87.2396%
+class 3 accuracy: 90.6604%
+class 4 accuracy: 94.4518%
+class 5 accuracy: 93.6472%
+class 6 accuracy: 98.2492%
+class 7 accuracy: 91.2734%
+class 8 accuracy: 77.6224%
+class 9 accuracy: 90.2196%
+
+Validation Loss: 0.2740, Accuracy: 13805/15000 (92%)
+Training Loss:0.2183
+Best Accuracy: 93.646667%
+Time Elapsed: 0h 0m 23s
+
+--------------------------------------------------------
+
+
+Train Epoch: 2 Iteration: 200 [6400/60000 (14%)]	 Batch 200 Loss: 0.117382
+Train Epoch: 2 Iteration: 400 [12800/60000 (28%)]	 Batch 400 Loss: 0.085478
+Train Epoch: 2 Iteration: 600 [19200/60000 (43%)]	 Batch 600 Loss: 0.053815
+Train Epoch: 2 Iteration: 800 [25600/60000 (57%)]	 Batch 800 Loss: 0.188327
+Train Epoch: 2 Iteration: 1000 [32000/60000 (71%)]	 Batch 1000 Loss: 0.040581
+Train Epoch: 2 Iteration: 1200 [38400/60000 (85%)]	 Batch 1200 Loss: 0.122975
+Train Epoch: 2 Iteration: 1400 [44800/60000 (100%)]	 Batch 1400 Loss: 0.253761
+
+
+----------------- Epoch 2 -----------------
+
+15000
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[1442,    0,    6,    4,    0,   11,    5,    1,   16,   10],
+        [   0, 1587,    7,    1,    1,    1,    1,    4,   24,    2],
+        [   3,   12, 1446,   27,   10,    4,    5,   44,   28,    0],
+        [   3,   21,   35, 1404,    2,   27,    0,   13,   50,   12],
+        [   6,    6,   17,    0, 1464,    9,    8,   20,   22,  131],
+        [  18,    6,    0,   35,    1, 1221,    4,    2,   30,    9],
+        [  21,    9,    9,    4,   10,   45, 1462,    1,   40,    1],
+        [   2,    1,   10,   10,    4,    7,    0, 1440,    8,   25],
+        [   2,    8,    4,    9,    0,    3,    0,    0, 1184,    5],
+        [   0,    1,    2,    5,   22,   10,    0,   22,   28, 1308]])
+class 0 accuracy: 96.3260%
+class 1 accuracy: 96.1236%
+class 2 accuracy: 94.1406%
+class 3 accuracy: 93.6624%
+class 4 accuracy: 96.6975%
+class 5 accuracy: 91.2556%
+class 6 accuracy: 98.4512%
+class 7 accuracy: 93.0834%
+class 8 accuracy: 82.7972%
+class 9 accuracy: 87.0259%
+
+Validation Loss: 0.2343, Accuracy: 13958/15000 (93%)
+Training Loss:0.1905
+Best Accuracy: 93.646667%
+Time Elapsed: 0h 0m 35s
+
+--------------------------------------------------------
+
+
+Train Epoch: 3 Iteration: 200 [6400/60000 (14%)]	 Batch 200 Loss: 0.069105
+Train Epoch: 3 Iteration: 400 [12800/60000 (28%)]	 Batch 400 Loss: 0.093426
+Train Epoch: 3 Iteration: 600 [19200/60000 (43%)]	 Batch 600 Loss: 0.043206
+Train Epoch: 3 Iteration: 800 [25600/60000 (57%)]	 Batch 800 Loss: 0.017476
+Train Epoch: 3 Iteration: 1000 [32000/60000 (71%)]	 Batch 1000 Loss: 0.260061
+Train Epoch: 3 Iteration: 1200 [38400/60000 (85%)]	 Batch 1200 Loss: 0.227787
+Train Epoch: 3 Iteration: 1400 [44800/60000 (100%)]	 Batch 1400 Loss: 0.046363
+
+
+----------------- Epoch 3 -----------------
+
+15000
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[1442,    0,    4,    1,    0,    8,    5,    2,    4,    4],
+        [   0, 1578,   10,    6,    0,    3,    0,    2,   46,    0],
+        [   2,   11, 1441,   18,   11,    6,    2,   16,   21,    0],
+        [   2,   11,   19, 1404,    2,   35,    0,    4,   60,   10],
+        [   0,    5,    8,    1, 1354,    6,    4,   10,    7,   12],
+        [  12,    2,    1,   38,    1, 1207,    9,    0,   49,    6],
+        [  24,    7,   20,    7,   10,   36, 1463,    0,   25,    1],
+        [   3,   30,   22,   13,    6,    7,    1, 1474,    8,   19],
+        [   3,    4,    5,    8,    1,    6,    1,    0, 1164,    3],
+        [   9,    3,    6,    3,  129,   24,    0,   39,   46, 1448]])
+class 0 accuracy: 96.3260%
+class 1 accuracy: 95.5784%
+class 2 accuracy: 93.8151%
+class 3 accuracy: 93.6624%
+class 4 accuracy: 89.4320%
+class 5 accuracy: 90.2093%
+class 6 accuracy: 98.5185%
+class 7 accuracy: 95.2812%
+class 8 accuracy: 81.3986%
+class 9 accuracy: 96.3407%
+
+Validation Loss: 0.2425, Accuracy: 13975/15000 (93%)
+Training Loss:0.1740
+Best Accuracy: 93.646667%
+Time Elapsed: 0h 0m 47s
+
+--------------------------------------------------------
+
+
+Train Epoch: 4 Iteration: 200 [6400/60000 (14%)]	 Batch 200 Loss: 0.238490
+Train Epoch: 4 Iteration: 400 [12800/60000 (28%)]	 Batch 400 Loss: 0.114981
+================================ QUIT ================================
+ Saving Model ...
+15000

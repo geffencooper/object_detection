@@ -1,0 +1,148 @@
+============================ Raw Args ============================
+Namespace(batch_size=128, classification='y', dropout='n', dropout_prob=0.0, gpu_i=-1, imbalanced_sampler='n', k_folds='4', l2_reg='n', load_trained='n', log_dest='../models/sorting-2021-11-16_13-40-07', loss_freq=2, lr=0.005, model_name='SortingClassifier128', normalize='n', num_classes=5, num_epochs=100, optim='RMS', regression='n', root_dir='none', session_name='sorting', test_data_dir='none', test_labels_csv='none', train_data_dir='none', train_labels_csv='none', trained_path='../models/PMR_detection_0-3_two_to_one-2021-09-01_12-09-14/BEST_model.pth', val_freq=0, weight_decay_amnt=0.0, weighted_loss='n')
+
+
+
+================================ Start Training ================================
+
+Session Name: sorting
+
+Model Name: SortingClassifier128
+Device: cpu
+
+Hyperparameters:
+Batch Size: 128
+Learning Rate: 0.005
+Number of Epochs: 100
+Normalization:n
+
+
+FOLD 0
+=================================================================
+
+
+----------------- Epoch 0 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[ 0,  0,  0,  0,  0],
+        [ 2,  2,  0,  2,  0],
+        [ 0,  0,  0,  0,  0],
+        [ 5, 11, 16,  9, 10],
+        [ 0,  0,  0,  0,  0]])
+class 0 accuracy: 0.0000%
+class 1 accuracy: 15.3846%
+class 2 accuracy: 0.0000%
+class 3 accuracy: 81.8182%
+class 4 accuracy: 0.0000%
+
+Validation Loss: 1.5928, Accuracy: 11/128 (9%)
+Training Loss:293623.6490
+Best Accuracy: 8.593750%
+Time Elapsed: 0h 0m 7s
+
+--------------------------------------------------------
+
+
+
+
+----------------- Epoch 1 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[ 0,  0,  0,  0,  0],
+        [ 0,  0,  0,  0,  0],
+        [ 0,  0,  0,  0,  0],
+        [ 7, 13, 16, 11, 10],
+        [ 0,  0,  0,  0,  0]])
+class 0 accuracy: 0.0000%
+class 1 accuracy: 0.0000%
+class 2 accuracy: 0.0000%
+class 3 accuracy: 100.0000%
+class 4 accuracy: 0.0000%
+
+Validation Loss: 47.1136, Accuracy: 11/128 (9%)
+Training Loss:74.1238
+Best Accuracy: 8.593750%
+Time Elapsed: 0h 0m 14s
+
+--------------------------------------------------------
+
+
+
+
+----------------- Epoch 2 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[ 0,  0,  0,  0,  0],
+        [ 0,  0,  0,  0,  0],
+        [ 0,  0,  0,  0,  0],
+        [ 7, 13, 16, 11, 10],
+        [ 0,  0,  0,  0,  0]])
+class 0 accuracy: 0.0000%
+class 1 accuracy: 0.0000%
+class 2 accuracy: 0.0000%
+class 3 accuracy: 100.0000%
+class 4 accuracy: 0.0000%
+
+Validation Loss: 10.9240, Accuracy: 11/128 (9%)
+Training Loss:29.7754
+Best Accuracy: 8.593750%
+Time Elapsed: 0h 0m 20s
+
+--------------------------------------------------------
+
+
+
+
+----------------- Epoch 3 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[ 0,  0,  0,  0,  0],
+        [ 7, 13, 16, 11, 10],
+        [ 0,  0,  0,  0,  0],
+        [ 0,  0,  0,  0,  0],
+        [ 0,  0,  0,  0,  0]])
+class 0 accuracy: 0.0000%
+class 1 accuracy: 100.0000%
+class 2 accuracy: 0.0000%
+class 3 accuracy: 0.0000%
+class 4 accuracy: 0.0000%
+
+Validation Loss: 1.5914, Accuracy: 13/128 (10%)
+Training Loss:6.7454
+Best Accuracy: 10.156250%
+Time Elapsed: 0h 0m 27s
+
+--------------------------------------------------------
+
+
+
+
+----------------- Epoch 4 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[ 0,  0,  0,  0,  0],
+        [ 7, 13, 16, 11, 10],
+        [ 0,  0,  0,  0,  0],
+        [ 0,  0,  0,  0,  0],
+        [ 0,  0,  0,  0,  0]])
+class 0 accuracy: 0.0000%
+class 1 accuracy: 100.0000%
+class 2 accuracy: 0.0000%
+class 3 accuracy: 0.0000%
+class 4 accuracy: 0.0000%
+
+Validation Loss: 1.5931, Accuracy: 13/128 (10%)
+Training Loss:1.6499
+Best Accuracy: 10.156250%
+Time Elapsed: 0h 0m 34s
+
+--------------------------------------------------------
+
+
+================================ QUIT ================================
+ Saving Model ...

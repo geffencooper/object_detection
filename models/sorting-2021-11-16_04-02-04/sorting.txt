@@ -1,0 +1,79 @@
+============================ Raw Args ============================
+Namespace(batch_size=64, classification='y', dropout='n', dropout_prob=0.0, gpu_i=-1, imbalanced_sampler='n', k_folds='5', l2_reg='n', load_trained='n', log_dest='../models/sorting-2021-11-16_04-02-04', loss_freq=2, lr=0.005, model_name='SortingClassifier128', normalize='n', num_classes=5, num_epochs=20, optim='SGD', regression='n', root_dir='none', session_name='sorting', test_data_dir='none', test_labels_csv='none', train_data_dir='none', train_labels_csv='none', trained_path='../models/PMR_detection_0-3_two_to_one-2021-09-01_12-09-14/BEST_model.pth', val_freq=0, weight_decay_amnt=0.0, weighted_loss='n')
+
+
+
+================================ Start Training ================================
+
+Session Name: sorting
+
+Model Name: SortingClassifier128
+Device: cpu
+
+Hyperparameters:
+Batch Size: 64
+Learning Rate: 0.005
+Number of Epochs: 20
+Normalization:n
+
+
+FOLD 0
+=================================================================
+tensor([3, 4, 2, 2, 0, 4, 0, 3, 2, 2, 4, 1, 1, 4, 4, 1, 3, 1, 1, 1, 4, 4, 1, 0,
+        3, 4, 0, 1, 0, 0, 4, 1, 2, 3, 3, 2, 1, 4, 2, 3, 0, 3, 0, 0, 0, 2, 2, 3,
+        4, 2, 4, 0, 4, 1, 0, 2, 1, 0, 4, 3, 2, 1, 0, 3])
+[14, 13, 12, 11, 14]
+================================ QUIT ================================
+ Saving Model ...
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[ 0,  0,  1,  0,  0],
+        [ 0,  0,  0,  0,  0],
+        [ 0,  0,  0,  0,  0],
+        [ 7, 10,  8, 11,  8],
+        [ 0,  0,  0,  0,  0]])
+class 0 accuracy: 0.0000%
+class 1 accuracy: 0.0000%
+class 2 accuracy: 0.0000%
+class 3 accuracy: 100.0000%
+class 4 accuracy: 0.0000%
+
+Validation Loss: 1.5950, Accuracy: 11/225 (5%)
+Best Accuracy: 4.888889%
+Time Elapsed: 0h 0m 3s
+Iterations: []
+Val_Accuracies: []
+Val_Losses: []
+Train_Losses: []
+
+FOLD 1
+=================================================================
+tensor([2, 2, 4, 1, 4, 1, 4, 4, 4, 4, 3, 2, 1, 4, 3, 3, 1, 3, 0, 2, 0, 0, 2, 2,
+        3, 4, 4, 4, 0, 2, 3, 1, 3, 3, 0, 3, 2, 1, 1, 4, 3, 1, 3, 4, 2, 3, 4, 4,
+        2, 2, 2, 4, 0, 3, 1, 1, 2, 4, 0, 3, 3, 1, 2, 1])
+[21, 25, 26, 26, 30]
+================================ QUIT ================================
+ Saving Model ...
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[ 8, 11,  3,  9,  2],
+        [ 5,  0,  1,  0,  4],
+        [ 0,  0,  0,  0,  2],
+        [ 0,  0,  0,  0,  0],
+        [ 0,  0,  0,  0,  0]])
+class 0 accuracy: 61.5385%
+class 1 accuracy: 0.0000%
+class 2 accuracy: 0.0000%
+class 3 accuracy: 0.0000%
+class 4 accuracy: 0.0000%
+
+Validation Loss: 1.6033, Accuracy: 8/225 (4%)
+Best Accuracy: 3.555556%
+Time Elapsed: 0h 0m 5s
+Iterations: []
+Val_Accuracies: []
+Val_Losses: []
+Train_Losses: []
+
+FOLD 2
+=================================================================

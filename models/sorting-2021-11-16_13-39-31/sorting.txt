@@ -1,0 +1,127 @@
+============================ Raw Args ============================
+Namespace(batch_size=225, classification='y', dropout='n', dropout_prob=0.0, gpu_i=-1, imbalanced_sampler='n', k_folds='4', l2_reg='n', load_trained='n', log_dest='../models/sorting-2021-11-16_13-39-31', loss_freq=2, lr=0.005, model_name='SortingClassifier128', normalize='n', num_classes=5, num_epochs=100, optim='SGD', regression='n', root_dir='none', session_name='sorting', test_data_dir='none', test_labels_csv='none', train_data_dir='none', train_labels_csv='none', trained_path='../models/PMR_detection_0-3_two_to_one-2021-09-01_12-09-14/BEST_model.pth', val_freq=0, weight_decay_amnt=0.0, weighted_loss='n')
+
+
+
+================================ Start Training ================================
+
+Session Name: sorting
+
+Model Name: SortingClassifier128
+Device: cpu
+
+Hyperparameters:
+Batch Size: 225
+Learning Rate: 0.005
+Number of Epochs: 100
+Normalization:n
+
+
+FOLD 0
+=================================================================
+
+
+----------------- Epoch 0 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[ 0,  0,  0,  0,  0],
+        [ 0,  0,  0,  0,  0],
+        [ 0,  0,  0,  0,  0],
+        [13,  7, 16, 10, 11],
+        [ 0,  0,  0,  0,  0]])
+class 0 accuracy: 0.0000%
+class 1 accuracy: 0.0000%
+class 2 accuracy: 0.0000%
+class 3 accuracy: 100.0000%
+class 4 accuracy: 0.0000%
+
+Validation Loss: 1.6358, Accuracy: 10/225 (4%)
+Training Loss:1.6115
+Best Accuracy: 4.444444%
+Time Elapsed: 0h 0m 7s
+
+--------------------------------------------------------
+
+
+
+
+----------------- Epoch 1 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[ 0,  0,  0,  0,  0],
+        [ 0,  0,  0,  0,  0],
+        [ 0,  0,  0,  0,  0],
+        [13,  7, 16, 10, 11],
+        [ 0,  0,  0,  0,  0]])
+class 0 accuracy: 0.0000%
+class 1 accuracy: 0.0000%
+class 2 accuracy: 0.0000%
+class 3 accuracy: 100.0000%
+class 4 accuracy: 0.0000%
+
+Validation Loss: 1.6332, Accuracy: 10/225 (4%)
+Training Loss:1.6097
+Best Accuracy: 4.444444%
+Time Elapsed: 0h 0m 13s
+
+--------------------------------------------------------
+
+
+
+
+----------------- Epoch 2 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[ 0,  0,  0,  0,  0],
+        [ 0,  0,  0,  0,  0],
+        [ 0,  0,  0,  0,  0],
+        [13,  7, 16, 10, 11],
+        [ 0,  0,  0,  0,  0]])
+class 0 accuracy: 0.0000%
+class 1 accuracy: 0.0000%
+class 2 accuracy: 0.0000%
+class 3 accuracy: 100.0000%
+class 4 accuracy: 0.0000%
+
+Validation Loss: 1.6299, Accuracy: 10/225 (4%)
+Training Loss:1.6075
+Best Accuracy: 4.444444%
+Time Elapsed: 0h 0m 19s
+
+--------------------------------------------------------
+
+
+
+
+----------------- Epoch 3 -----------------
+
+validation computation time: 0.0  minutes
+Confusion Matrix
+tensor([[ 0,  0,  0,  0,  0],
+        [ 0,  0,  0,  0,  0],
+        [ 0,  0,  0,  0,  0],
+        [13,  7, 16, 10, 11],
+        [ 0,  0,  0,  0,  0]])
+class 0 accuracy: 0.0000%
+class 1 accuracy: 0.0000%
+class 2 accuracy: 0.0000%
+class 3 accuracy: 100.0000%
+class 4 accuracy: 0.0000%
+
+Validation Loss: 1.6261, Accuracy: 10/225 (4%)
+Training Loss:1.6049
+Best Accuracy: 4.444444%
+Time Elapsed: 0h 0m 25s
+
+--------------------------------------------------------
+
+
+
+
+----------------- Epoch 4 -----------------
+
+================================ QUIT ================================
+ Saving Model ...
