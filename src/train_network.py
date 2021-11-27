@@ -7,7 +7,7 @@ and defines the training loop and stat helper functions
 from sklearn.utils import class_weight
 from torch.optim import optimizer
 from pytorch_dataset import *
-from network_def import MNISTClassifier, ObjectClassifier128
+from network_def import MNISTClassifier, ObjectClassifier128,SortingClassifier128,ActivityFCN
 import torch
 from torch.utils.data import Dataset, DataLoader, dataloader
 import time
@@ -20,7 +20,7 @@ import sklearn.utils as sku
 from sklearn.model_selection import KFold, StratifiedKFold
 from pytorch_dataset import *
 
-dist = [0,0]
+dist = [0,0,0,0,0]
 #torch.manual_seed(42)
 # ===================================================================================================== #
 # ====================================== TRAINING FUNCTION ============================================ #
@@ -314,6 +314,11 @@ def create_dataset(args):
         return create_MNIST_dataset()
     elif args.model_name == "ObjectClassifier128":
         return create_ObjectClassifier128_dataset(args)
+    elif args.model_name == "SortingClassifier128":
+        return create_Sorting128_dataset(args)
+    elif args.model_name == "ActivityFCN":
+        #return create_Activity_dataset(args)
+        return create_MNIST_dataset()
     else:
         print("ERROR: invalid model name")
         exit(1)
@@ -323,6 +328,10 @@ def create_loader(dataset,sampler,args):
     if args.model_name == "MNISTClassifier":
         return DataLoader(dataset,batch_size=args.batch_size,sampler=sampler)
     elif args.model_name == "ObjectClassifier128":
+        return DataLoader(dataset,batch_size=args.batch_size,sampler=sampler)
+    elif args.model_name == "SortingClassifier128":
+        return DataLoader(dataset,batch_size=args.batch_size,sampler=sampler)
+    elif args.model_name == "ActivityFCN":
         return DataLoader(dataset,batch_size=args.batch_size,sampler=sampler)
     else:
         print("ERROR: invalid model name")
@@ -355,6 +364,10 @@ def create_model(args,device):
         return MNISTClassifier(),torch.nn.CrossEntropyLoss()
     elif args.model_name == "ObjectClassifier128":
         return ObjectClassifier128(args),torch.nn.CrossEntropyLoss()
+    elif args.model_name == "SortingClassifier128":
+        return SortingClassifier128(args),torch.nn.CrossEntropyLoss()
+    elif args.model_name == "ActivityFCN":
+        return ActivityFCN(args),torch.nn.CrossEntropyLoss()
         # if args.classification == "y":
         #     return ObjectClassifier128(args),torch.nn.CrossEntropyLoss()
         # elif args.regression == "y":
@@ -372,6 +385,12 @@ def to_gpu(batch,device,args):
     elif args.model_name == "ObjectClassifier128":
         X_inputs,Y_labels = batch[0].to(device),batch[1].to(device)
         return X_inputs,Y_labels
+    elif args.model_name == "SortingClassifier128":
+        X_inputs,Y_labels = batch[0].to(device),batch[1].to(device)
+        return X_inputs,Y_labels
+    elif args.model_name == "ActivityFCN":
+        X_inputs,Y_labels = batch[0].to(device),batch[1].to(device)
+        return X_inputs,Y_labels
     else:
         print("ERROR: invalid model name")
         exit(1)
@@ -381,6 +400,10 @@ def forward_pass(data,batch,model,args):
     if args.model_name == "MNISTClassifier":
         return model(data)
     elif args.model_name == "ObjectClassifier128":
+        return model(data)
+    elif args.model_name == "SortingClassifier128":
+        return model(data)
+    elif args.model_name == "ActivityFCN":
         return model(data)
     else:
         print("ERROR: invalid model name")
@@ -392,6 +415,10 @@ def get_idxs(batch,args):
         return None
     elif args.model_name == "ObjectClassifier128":
         return batch[2]
+    elif args.model_name == "SortingClassifier128":
+        return batch[2]
+    elif args.model_name == "ActivityFCN":
+        return None
     else:
         print("ERROR: invalid model name")
         exit(1)
@@ -402,6 +429,12 @@ def get_label_dist(batch,args):
         labels = batch[1]
         for l in labels:
             dist[labels[l]]+=1
+        print(dist)
+    elif args.model_name == "SortingClassifier128":
+        labels = batch[1]
+        print(labels)
+        for l in labels:
+            dist[l]+=1
         print(dist)
     else:
         print("ERROR: invalid model name")
@@ -422,6 +455,8 @@ def eval_model(model,data_loader,device,criterion,args,print_idxs=False):
     all_labels = all_labels.to(device)
     all_idxs = all_idxs.to(device)
     num_batches = len(data_loader)
+    num_samples = len(data_loader.sampler)
+    print(num_samples)
     with torch.no_grad():
         val_start=time.time()
         for i, (batch) in enumerate(data_loader):
@@ -465,7 +500,7 @@ def eval_model(model,data_loader,device,criterion,args,print_idxs=False):
         eval_loss /= num_batches
 
         if args.classification == "y":
-            print("\nValidation Loss: {:.4f}, Accuracy: {}/{} ({:.0f}%)".format(eval_loss,correct,(len(data_loader.dataset)),100.*correct/(len(data_loader.dataset))))
+            print("\nValidation Loss: {:.4f}, Accuracy: {}/{} ({:.0f}%)".format(eval_loss,correct,(num_samples),100.*correct/(num_samples)))
         else:
             print("\nValidation Loss: {:.4f}".format(eval_loss))
             
@@ -477,7 +512,7 @@ def eval_model(model,data_loader,device,criterion,args,print_idxs=False):
 
 
     model.train()
-    return 100.*correct/(len(data_loader.dataset)),eval_loss
+    return 100.*correct/(num_samples),eval_loss
 
 
 '''Helper function to create a confusion matrix of classification results'''
