@@ -1,0 +1,29 @@
+============================ Raw Args ============================
+Namespace(batch_size=32, classification='y', dropout='n', dropout_prob=0.0, gpu_i=-1, imbalanced_sampler='n', k_folds='4', l2_reg='n', load_trained='n', log_dest='../models/activity-2021-11-28_11-13-09', loss_freq=200, lr=0.005, model_name='ActivityFCN', normalize='n', num_classes=10, num_epochs=3, optim='Adam', regression='n', root_dir='none', session_name='activity', test_data_dir='none', test_labels_csv='none', train_data_dir='none', train_labels_csv='none', trained_path='n', val_freq=0, weight_decay_amnt=0.0, weighted_loss='n')
+
+
+
+================================ Start Training ================================
+
+Session Name: activity
+
+Model Name: ActivityFCN
+Device: cpu
+
+Hyperparameters:
+Batch Size: 32
+Learning Rate: 0.005
+Number of Epochs: 3
+Normalization:n
+
+
+FOLD 0
+=================================================================
+Train Epoch: 0 Iteration: 200 [6400/60000 (14%)]	 Batch 200 Loss: 0.191497
+Train Epoch: 0 Iteration: 400 [12800/60000 (28%)]	 Batch 400 Loss: 0.233595
+Train Epoch: 0 Iteration: 600 [19200/60000 (43%)]	 Batch 600 Loss: 0.231611
+Train Epoch: 0 Iteration: 800 [25600/60000 (57%)]	 Batch 800 Loss: 0.241671
+Train Epoch: 0 Iteration: 1000 [32000/60000 (71%)]	 Batch 1000 Loss: 0.032705
+================================ QUIT ================================
+ Saving Model ...
+15000

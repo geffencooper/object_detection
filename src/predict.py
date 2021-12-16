@@ -21,15 +21,25 @@ if __name__ =="__main__":
 
     train_dataset, test_dataset = create_dataset(args)
     test_loader = DataLoader(test_dataset,batch_size=args.batch_size)
+    train_loader = DataLoader(train_dataset,batch_size=args.batch_size)
 
     pmr = ActivityFCN(args)
     pmr.load_state_dict(torch.load("/home/geffen/Desktop/object_detection/models/activity-2021-11-20_14-36-46/fold_0_BEST_model.pth"))
-
+    pmr.eval()
+    
+    pmr.qconfig = torch.quantization.default_qconfig
+    print(pmr.qconfig)
+    torch.quantization.prepare(pmr, inplace=True)
     # pmr = torch.quantization.quantize_dynamic(
     # pmr, {torch.nn.Linear}, dtype=torch.qint8
     # )
     print(pmr)
-    pmr.eval()
     pmr.to(device)
 
+    print("========== Calibration ===========")
+    eval_model(pmr,train_loader,device,torch.nn.CrossEntropyLoss(),args,print_idxs=False)
+    
+    print("======= Results ========")
+    torch.quantization.convert(pmr, inplace=True)
     eval_model(pmr,test_loader,device,torch.nn.CrossEntropyLoss(),args,print_idxs=False)
+    
