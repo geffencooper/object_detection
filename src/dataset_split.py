@@ -65,6 +65,5 @@ def split_folder(folder_path,train_percent):
     
     
 if __name__ == "__main__":
-    #folder_path = "/home/geffen/Downloads/trash_dataset/trash_dataset"
-    folder_path = "/home/geffen/Desktop/sorting"
-    split_dataset(folder_path,0.15)
+    folder_path = "/home/geffen/Desktop/dataset/"
+    split_dataset(folder_path,0.15) # 15% test, 85% train 
