@@ -22,7 +22,7 @@ import cv2
 import random
 import warnings
 #warnings.filterwarnings("error")
-torch.manual_seed(42)
+#torch.manual_seed(42)
 
 # ===================================================================================================== #
 # ========================================= DATASET CLASSES =========================================== #
@@ -194,6 +194,11 @@ class SortingDataset(Dataset):
         self.img_dir_path = img_dir_path
         self.transform = transform
         self.normalize = normalize
+        self.std_transform = transforms.Compose([
+            transforms.ToPILImage(),
+            transforms.Resize((128, 128)),
+            transforms.ToTensor()
+        ])
         
         # collect img classes from dir names
         img_classes = next(os.walk(img_dir_path))[1]
@@ -234,9 +239,9 @@ class SortingDataset(Dataset):
             y = idx//w
             
             # scale to RGB888 and save
-            img[x,y,0] = (r<<3)
-            img[x,y,1] = (g<<2)
-            img[x,y,2] = (b<<3)
+            img[y,x,0] = (r<<3)
+            img[y,x,1] = (g<<2)
+            img[y,x,2] = (b<<3)
             idx += 1
             
             pixel_h = img_file.read(1)
@@ -255,7 +260,10 @@ class SortingDataset(Dataset):
             
             # apply any transformation
             if self.transform:
-                img = self.transform(img)
+                if torch.rand(1) < 0.5: # apply additional transforms 50 % of the time
+                    img = self.transform(img)
+                else:
+                    img = self.std_transform(img)
                 if self.normalize:
                     norm = torchvision.transforms.Normalize((torch.mean(img)),(torch.std(img)))
                     img = norm(img)
@@ -284,13 +292,13 @@ class SortingDataset(Dataset):
         cols = 8
         obj_classes = list(self.classes)
         
-        fig,ax_array = plt.subplots(8,8,figsize=(20,20))
+        fig,ax_array = plt.subplots(rows,cols,figsize=(20,20))
         fig.subplots_adjust(hspace=0.5)
         for i in range(rows):
             for j in range(cols):
                 idx = i*rows+j
                 text = str(labels[idx].item()) + ":" + obj_classes[labels[idx]]  + ", i=" +str(idxs[idx].item())
-                ax_array[i,j].imshow(imgs[idx].permute(1, 2, 0), cmap="gray")
+                ax_array[i,j].imshow(imgs[idx].permute(1, 2, 0))
                 ax_array[i,j].title.set_text(text)
                 ax_array[i,j].set_xticks([])
                 ax_array[i,j].set_yticks([])
@@ -446,7 +454,10 @@ if __name__  == "__main__":
     #     ])
     train_transform = transforms.Compose([
             transforms.ToPILImage(),
-            transforms.Resize((128, 128)),
+            # transforms.Resize((128, 128)),
+            transforms.ColorJitter(brightness=(0.8,1.3),saturation=(0.5,1),contrast=(0.7,1.1)),
+            transforms.RandomGrayscale(0.25),
+            #transforms.RandomAffine(degrees=0,scale=(0.85,1.25)),
             #transforms.Grayscale(num_output_channels=1),
             transforms.ToTensor()
            # transforms.RandomHorizontalFlip(),
@@ -461,7 +472,7 @@ if __name__  == "__main__":
     args = a(True)
     
     #dataset = TrashDatasetNumPy("/home/geffen/Downloads/recycle_data_shuffled.npz",train_transform,True)
-    dataset = SortingDataset("/home/geffen/Desktop/sorting/train",train_transform,False)
+    dataset = SortingDataset("/home/geffen/Desktop/sorting_imgs/sorting_imgs/train",train_transform,False)
     dataset.visualize_batch()
     # loader = DataLoader(dataset,batch_size=64)
     # for i,batch in enumerate(loader):
